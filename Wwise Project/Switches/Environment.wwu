@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{770BD187-5036-4D4D-B653-E78BC93B5A1F}" SchemaVersion="133">
+	<Switches>
+		<WorkUnit Name="Environment" ID="{770BD187-5036-4D4D-B653-E78BC93B5A1F}" PersistMode="Standalone">
+			<Comment>A</Comment>
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="24"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<SwitchGroup Name="Surfaces" ID="{E2DF1C63-8810-4F2A-B7F8-6B8E31693303}">
+					<ChildrenList>
+						<Switch Name="Grass" ID="{FFEBF29E-3EEB-4FB6-B62F-BB3B666A4551}"/>
+						<Switch Name="Concrete" ID="{8856AF3B-B26D-4C77-A1B3-265681F4AE90}"/>
+						<Switch Name="Wood" ID="{A4205DD8-0107-4734-A6EC-019ABC87F0B7}"/>
+						<Switch Name="Metal" ID="{F5F5527C-3390-4B77-B5E6-085A90F6F01F}"/>
+						<Switch Name="Dirt" ID="{7AA61B09-1F10-448F-89BB-A0471EEC6AF9}"/>
+						<Switch Name="Carpet" ID="{7C1BD82A-FD9D-41CE-BE21-45A22AEE073C}"/>
+						<Switch Name="Tile" ID="{7D852F57-006E-4783-9456-E1BF5358D080}"/>
+						<Switch Name="Water" ID="{AD954638-5646-436E-9715-CFAD375D2316}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

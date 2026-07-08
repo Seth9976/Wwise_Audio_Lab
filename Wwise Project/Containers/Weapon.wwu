@@ -1,0 +1,2070 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{491F35F7-D8A2-4804-8237-56DBB97164F3}" SchemaVersion="133">
+	<Containers>
+		<WorkUnit Name="Weapon" ID="{491F35F7-D8A2-4804-8237-56DBB97164F3}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="4"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<PropertyContainer Name="Weapon" ID="{F518BBDB-69C1-45D9-B1DA-1623A2D09586}" ShortID="301691173">
+					<PropertyList>
+						<Property Name="3DPosition" Type="int16" Value="1"/>
+						<Property Name="CenterPercentage" Type="int32">
+							<ValueList>
+								<Value>100</Value>
+							</ValueList>
+						</Property>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{6B8529A0-AF29-4376-9A95-DAB7C461651A}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="ReflectionsVolume" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+						</Property>
+						<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+							<ObjectRef Name="Weapons" ID="{3BFA1648-4A3B-48B3-8D98-58FCBFF7A102}" WorkUnitID="{FB674831-9DB3-43DB-88C8-0EE9E9BF65A4}"/>
+						</Reference>
+						<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+							<ObjectRef Name="MainCharacter" ID="{81222C71-E408-48AD-8C1B-D92CB1D51523}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+						</Reference>
+						<Reference Name="ReflectionsAuxSend" CompanyID="4095" PluginID="65535" PluginType="15">
+							<ObjectRef Name="FirstPerson" ID="{3595F519-5F5B-4401-AD56-BEED0D5AC609}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SwitchContainer Name="Weapon Fire SW" ID="{58E6852A-7680-4EA9-812A-C7A3CA2EFE7C}" ShortID="125715488">
+							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="1"/>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="CenterPercentage" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
+								<Property Name="EnableDiffraction" Type="bool" Value="False"/>
+								<Property Name="GameAuxSendVolume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
+								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="ReflectionsVolume" Type="Real64">
+									<ValueList>
+										<Value>-12</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-16</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{3D155D27-3383-4029-8C82-FE85CB402F72}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="ATT_Ball_Rebound" ID="{02659CA5-1F04-4ECC-8357-E42CCC748860}" WorkUnitID="{42BA3E2A-B4AF-41ED-9F47-7C48CA358E97}"/>
+								</Reference>
+								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Designed" ID="{00D9BAF2-9EED-401B-BEAF-2E594E01DC8F}" WorkUnitID="{C514809B-6AA2-42B8-98D6-35EAB05EA768}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Backgrounds_MainMix" ID="{ECFB6D01-E6C8-4775-8F5E-0605C23A1245}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+								</Reference>
+								<Reference Name="ReflectionsAuxSend">
+									<ObjectRef Name="FirstPerson" ID="{3595F519-5F5B-4401-AD56-BEED0D5AC609}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Weapon_Type" ID="{64FD6507-EE06-4B10-8340-903490A51F82}" WorkUnitID="{C514809B-6AA2-42B8-98D6-35EAB05EA768}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Wpn Fire Designed RND" ID="{44D8ACCB-464C-4F74-8EF9-A7E93047B9E7}" ShortID="771465222">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+										</Reference>
+										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Weapon Fire 01" ID="{C578ED87-6B10-4026-881E-0E1ADE2149BF}" ShortID="885510983">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Weapon_Fire_01" ID="{A62D634A-7AA1-48DD-91E7-B81D5E06653C}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.00476618133558815"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0810868577372643"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Weapon_Fire_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="571514822"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Weapon_Fire_01" ID="{A62D634A-7AA1-48DD-91E7-B81D5E06653C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<BlendContainer Name="Wpn Fire Dry BLD" ID="{2D1B9515-5F26-4536-9216-440FC0097EE5}" ShortID="546552752">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+										</Reference>
+										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Dry" ID="{48282A1C-5B83-43C4-A641-39CFB7A971E3}" ShortID="195351939">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Dry" ID="{395C9A9D-42FD-452E-BF93-48B97C2AD176}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Weapon Dry\Dry.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="317645786"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Dry" ID="{395C9A9D-42FD-452E-BF93-48B97C2AD176}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</BlendContainer>
+								<RandomSequenceContainer Name="Hello" ID="{C9D0DD68-B62E-4065-A3F3-45B9483FCBE6}" ShortID="193307457">
+									<Comment>Thanks to Francis Brus from Red Barrels for the yells!</Comment>
+									<PropertyList>
+										<Property Name="GameAuxSendVolume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
+										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.5"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+										</Reference>
+										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+										</Reference>
+										<Reference Name="ReflectionsAuxSend">
+											<ObjectRef Name="ThirdPerson" ID="{6758FB9E-76D6-42DE-A2B0-EE031329989B}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Hello" ID="{A59F4823-F727-48D9-89E6-94CD3C6C953A}" ShortID="619175818">
+											<Comment>Thanks to Francis Brus from Red Barrels for the yell!</Comment>
+											<PropertyList>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Hello" ID="{3111A4C5-DAB2-4E44-B7B7-37BBBBFF47F0}">
+													<Comment>Thanks to Francis Brus from Red Barrels for the yells!</Comment>
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Yell\RB_Yell10.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="655823886"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<EffectSlot Name="" ID="{70D97B0E-443E-4EF5-AF87-8786CB93DAC4}" ShortID="747694141">
+														<PropertyList>
+															<Property Name="Render" Type="bool" Value="True"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="Effect">
+																<Custom>
+																	<Effect Name="Parametric EQ (Custom)" ID="{32186208-1030-4C59-B434-9F51505C7D1D}" ShortID="447945301" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																		<PropertyList>
+																			<Property Name="FilterTypeBand1" Type="int32" Value="6"/>
+																			<Property Name="FrequencyBand1" Type="Real32" Value="3000"/>
+																			<Property Name="FrequencyBand2" Type="Real32" Value="100"/>
+																			<Property Name="GainBand1" Type="Real32" Value="3"/>
+																			<Property Name="GainBand2" Type="Real32" Value="3"/>
+																			<Property Name="OnOffBand1" Type="bool" Value="False"/>
+																			<Property Name="OnOffBand3" Type="bool" Value="False"/>
+																		</PropertyList>
+																	</Effect>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</ObjectList>
+											</ObjectLists>
+											<ActiveSourceList>
+												<ActiveSource Name="Hello" ID="{3111A4C5-DAB2-4E44-B7B7-37BBBBFF47F0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{A5A6E5DD-B297-4176-9349-76040FD53C62}">
+									<ChildrenList>
+										<Path2D Name="Weapon Fire SW_Path" ID="{D80A3692-3737-419D-A013-4F7DDAA60D19}">
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>2.54237</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Wpn Fire Dry BLD" ID="{2D1B9515-5F26-4536-9216-440FC0097EE5}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Hello" ID="{C9D0DD68-B62E-4065-A3F3-45B9483FCBE6}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Wpn Fire Designed RND" ID="{44D8ACCB-464C-4F74-8EF9-A7E93047B9E7}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Dry" ID="{5245DE50-9F9D-4ABB-AD6C-782C3E682E24}"/>
+										<ItemList>
+											<ItemRef Name="Wpn Fire Dry BLD" ID="{2D1B9515-5F26-4536-9216-440FC0097EE5}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Scream" ID="{BE7132BC-B1FC-4813-A270-19E5AD0CD938}"/>
+										<ItemList>
+											<ItemRef Name="Hello" ID="{C9D0DD68-B62E-4065-A3F3-45B9483FCBE6}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Designed" ID="{00D9BAF2-9EED-401B-BEAF-2E594E01DC8F}"/>
+										<ItemList>
+											<ItemRef Name="Wpn Fire Designed RND" ID="{44D8ACCB-464C-4F74-8EF9-A7E93047B9E7}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<SwitchContainer Name="Weapon Select SW" ID="{C15865B5-7947-46A9-A9BC-EF6207863EC2}" ShortID="296372276">
+							<PropertyList>
+								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-18</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Designed" ID="{00D9BAF2-9EED-401B-BEAF-2E594E01DC8F}" WorkUnitID="{C514809B-6AA2-42B8-98D6-35EAB05EA768}"/>
+								</Reference>
+								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Weapon_Type" ID="{64FD6507-EE06-4B10-8340-903490A51F82}" WorkUnitID="{C514809B-6AA2-42B8-98D6-35EAB05EA768}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Wpn Select Designed RND" ID="{EB3B42B1-1836-4331-8ECD-94F9DB5DE2A8}" ShortID="833717454">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+										</Reference>
+										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Weapon_Select_Designed_1" ID="{E541A678-0BA3-4A88-83D4-827E64F21B1C}" ShortID="458724477">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Weapon_Select_Designed_1" ID="{05D88605-B3F5-4778-B44F-3099529CA34B}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.05129933481153"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.592792313377679"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.68717812269032"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Weapon_Select\Weapon_Select_Designed_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="995384268"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Weapon_Select_Designed_1" ID="{05D88605-B3F5-4778-B44F-3099529CA34B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Weapon_Select_Designed_2" ID="{5D5FD0BD-6100-4C6A-8665-E55B9D385D5A}" ShortID="157546693">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Weapon_Select_Designed_2" ID="{510C2B7C-DF94-4E0B-B081-758B2BBAADCA}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.342208425720621"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.877248583394928"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.320480906627247"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.44216407982262"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Weapon_Select\Weapon_Select_Designed_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="546217909"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Weapon_Select_Designed_2" ID="{510C2B7C-DF94-4E0B-B081-758B2BBAADCA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Weapon_Select_Designed_3" ID="{503F2CB3-B4D9-4B31-8B83-FF6CB9C797C6}" ShortID="758029503">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Weapon_Select_Designed_3" ID="{D048A8BB-C03E-4CE6-8192-7627E1E4C8E1}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.170771125893077"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0528839615668883"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.300777531411678"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Weapon_Select\Weapon_Select_Designed_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="516239349"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Weapon_Select_Designed_3" ID="{D048A8BB-C03E-4CE6-8192-7627E1E4C8E1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Wpn Select Dry RND" ID="{F5D94688-176B-49BC-9733-69DD80047EBC}" ShortID="184803241">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+										</Reference>
+										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Weapon_Select_Dry_1" ID="{C2794645-F564-4F49-8134-6B10BE579F23}" ShortID="1026152850">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Weapon_Select_Dry_1" ID="{6957B8D8-9DC8-4FCB-9322-EE485A2DBE3B}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Weapon_Select\Weapon_Select_Dry_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="755872164"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Weapon_Select_Dry_1" ID="{6957B8D8-9DC8-4FCB-9322-EE485A2DBE3B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Weapon_Select_Dry_2" ID="{2C2316F5-2F95-4A18-8971-7F886B48DE24}" ShortID="479941093">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Weapon_Select_Dry_2" ID="{7D194250-B97A-4FE9-B9A8-263A48364C2E}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Weapon_Select\Weapon_Select_Dry_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="352379478"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Weapon_Select_Dry_2" ID="{7D194250-B97A-4FE9-B9A8-263A48364C2E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Weapon_Select_Dry_3" ID="{61590CA7-D4E5-4BA0-96AC-3E58C51A5CFF}" ShortID="257846886">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Weapon_Select_Dry_3" ID="{951BFC9E-2E26-45E1-B3BA-FB1463C3B5AE}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0255925104705593"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.066540527223454"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0230332594235033"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Weapon_Select\Weapon_Select_Dry_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="260713464"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Weapon_Select_Dry_3" ID="{951BFC9E-2E26-45E1-B3BA-FB1463C3B5AE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="Wpn Select Scream silent" ID="{9734E37E-76AE-4D99-A495-D525ADB85860}" ShortID="1064848476">
+									<ReferenceList>
+										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+										</Reference>
+										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Wwise Silence" ID="{A7413DEA-3C73-46A3-A060-05AB1856BB12}" ShortID="5442740" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<PropertyList>
+												<Property Name="Length" Type="Real32" Value="0.1"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wwise Silence" ID="{A7413DEA-3C73-46A3-A060-05AB1856BB12}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Wpn Select Scream silent" ID="{9734E37E-76AE-4D99-A495-D525ADB85860}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Wpn Select Dry RND" ID="{F5D94688-176B-49BC-9733-69DD80047EBC}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Wpn Select Designed RND" ID="{EB3B42B1-1836-4331-8ECD-94F9DB5DE2A8}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Dry" ID="{5245DE50-9F9D-4ABB-AD6C-782C3E682E24}"/>
+										<ItemList>
+											<ItemRef Name="Wpn Select Dry RND" ID="{F5D94688-176B-49BC-9733-69DD80047EBC}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Scream" ID="{BE7132BC-B1FC-4813-A270-19E5AD0CD938}"/>
+										<ItemList>
+											<ItemRef Name="Wpn Select Scream silent" ID="{9734E37E-76AE-4D99-A495-D525ADB85860}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Designed" ID="{00D9BAF2-9EED-401B-BEAF-2E594E01DC8F}"/>
+										<ItemList>
+											<ItemRef Name="Wpn Select Designed RND" ID="{EB3B42B1-1836-4331-8ECD-94F9DB5DE2A8}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<SwitchContainer Name="Weapon Ball Rebound Surface SW" ID="{6D7045C1-5AB1-4B72-8B54-FC37A8F46CB0}" ShortID="735590167">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="False"/>
+								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>10</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
+								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{57E81403-9AE9-46B0-8AE9-3AB92EFCB0B9}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-10"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="ATT_Ball_Rebound" ID="{02659CA5-1F04-4ECC-8357-E42CCC748860}" WorkUnitID="{42BA3E2A-B4AF-41ED-9F47-7C48CA358E97}"/>
+								</Reference>
+								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Concrete" ID="{8856AF3B-B26D-4C77-A1B3-265681F4AE90}" WorkUnitID="{770BD187-5036-4D4D-B653-E78BC93B5A1F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Backgrounds_MainMix" ID="{ECFB6D01-E6C8-4775-8F5E-0605C23A1245}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+								</Reference>
+								<Reference Name="ReflectionsAuxSend">
+									<ObjectRef Name="FirstPerson" ID="{3595F519-5F5B-4401-AD56-BEED0D5AC609}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Surfaces" ID="{E2DF1C63-8810-4F2A-B7F8-6B8E31693303}" WorkUnitID="{770BD187-5036-4D4D-B653-E78BC93B5A1F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Wpn Rbn Concrete Rnd" ID="{08CAD0B8-0D3D-444C-B0F2-112989DE841D}" ShortID="242058076">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="ATT_Ball_Rebound" ID="{02659CA5-1F04-4ECC-8357-E42CCC748860}" WorkUnitID="{42BA3E2A-B4AF-41ED-9F47-7C48CA358E97}"/>
+										</Reference>
+										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+										</Reference>
+										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Rebound Concrete 1" ID="{1750177F-0889-405A-9551-3D63DC5272C2}" ShortID="476940224">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Concrete_1" ID="{41FD3808-B393-48A4-9A58-5A182ABA549C}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Concrete\Rebound_Concrete_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="117392412"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Concrete_1" ID="{41FD3808-B393-48A4-9A58-5A182ABA549C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rebound Concrete 2" ID="{48FDE4E6-9FAB-4679-8B49-C68F64BD39FA}" ShortID="652294112">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Concrete_2" ID="{395B93C4-9E3C-416D-84BE-D9D586CD7E87}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Concrete\Rebound_Concrete_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="997643945"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Concrete_2" ID="{395B93C4-9E3C-416D-84BE-D9D586CD7E87}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rebound Concrete 3" ID="{2BA3C9A3-FF76-406C-AD8B-E0479225EAEB}" ShortID="687691566">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Concrete_3" ID="{6C0BD9B2-0F24-44F2-B0D8-893F95EEB82C}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Concrete\Rebound_Concrete_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="857816623"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Concrete_3" ID="{6C0BD9B2-0F24-44F2-B0D8-893F95EEB82C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rebound Concrete 4" ID="{74420CE1-6DC3-49BE-B550-E054C2926605}" ShortID="1009093819">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Concrete_4" ID="{E9689343-6FDC-4D35-A450-88F8D791E90F}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Concrete\Rebound_Concrete_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="273222232"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Concrete_4" ID="{E9689343-6FDC-4D35-A450-88F8D791E90F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rebound Concrete 5" ID="{F97D167F-98D7-4D40-84A9-4B30F1FE0298}" ShortID="1054313573">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Concrete_5" ID="{17BBA27B-FD5C-46DD-9397-3ED8C0B335D1}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Concrete\Rebound_Concrete_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="253263210"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Concrete_5" ID="{17BBA27B-FD5C-46DD-9397-3ED8C0B335D1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Wpn Rbn Grass Rnd" ID="{9FD5F9A7-490E-44B9-90F5-B1C90B7F3129}" ShortID="557179542">
+									<PropertyList>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>20</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+										</Reference>
+										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+										</Reference>
+										<Reference Name="ReflectionsAuxSend">
+											<ObjectRef Name="FirstPerson" ID="{3595F519-5F5B-4401-AD56-BEED0D5AC609}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Rebound Grass 1" ID="{99E7B8EB-0468-4DC1-B2F0-A3EE6CF29D86}" ShortID="129595338">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Grass_1" ID="{DF660521-9D78-4EC8-9672-DCF1F0F73DC9}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Grass\Rebound_Grass_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="259421319"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Grass_1" ID="{DF660521-9D78-4EC8-9672-DCF1F0F73DC9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rebound Grass 2" ID="{94F407F1-8F18-41B8-AE1C-C25EFAA7AF5B}" ShortID="762967798">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Grass_2" ID="{9944E740-79E4-4999-B8B8-33F9AE2F4203}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Grass\Rebound_Grass_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="494998784"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Grass_2" ID="{9944E740-79E4-4999-B8B8-33F9AE2F4203}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rebound Grass 3" ID="{C9E1C0F9-DDD4-4FB5-85AB-D0A1C6B57068}" ShortID="721137469">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Grass_3" ID="{32B64A86-878B-4672-B739-37550EB82A70}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Grass\Rebound_Grass_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="731092927"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Grass_3" ID="{32B64A86-878B-4672-B739-37550EB82A70}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rebound Grass 4" ID="{28E93DE9-F49C-4BD0-8BD3-01089DEFF56C}" ShortID="533622397">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Grass_4" ID="{A2501E88-6A6A-4DF3-BAE0-D00E9BBAFEC4}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Grass\Rebound_Grass_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="464537405"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Grass_4" ID="{A2501E88-6A6A-4DF3-BAE0-D00E9BBAFEC4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rebound Grass 5" ID="{469CB40D-A26F-459A-98E4-AB6BD780AF54}" ShortID="679358360">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Grass_5" ID="{1E563042-9100-4DA3-BD89-663800C3A863}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Grass\Rebound_Grass_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="746502005"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Grass_5" ID="{1E563042-9100-4DA3-BD89-663800C3A863}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Wpn Rbn Water Rnd" ID="{13BFF005-7DAC-48FD-9E28-AAAD4104109D}" ShortID="685266654">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="ATT_Ball Rebound Water" ID="{10964535-3E70-4BEC-B98A-F6E6DCD74FAC}" WorkUnitID="{42BA3E2A-B4AF-41ED-9F47-7C48CA358E97}"/>
+										</Reference>
+										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+										</Reference>
+										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Rebound Water 1" ID="{1DC2C388-2773-4ABD-8BC6-650612161015}" ShortID="1056498029">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Water_1" ID="{35874C5F-FD58-4E27-BB79-0B6A32763853}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Water\Rebound_Water_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="171191014"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Water_1" ID="{35874C5F-FD58-4E27-BB79-0B6A32763853}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rebound Water 2" ID="{C31C9E8E-8A03-45F8-BE8C-D24A6C3A46EB}" ShortID="572428717">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Water_2" ID="{5D652709-EE5A-41FF-8D3C-D2AC669C14C9}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Water\Rebound_Water_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="692811870"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Water_2" ID="{5D652709-EE5A-41FF-8D3C-D2AC669C14C9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rebound Water 3" ID="{3EA16A3B-1434-49D3-8340-ED5676375B30}" ShortID="1025657636">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Water_3" ID="{A2109DE8-C6A7-4C16-937B-988637C9F84C}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Water\Rebound_Water_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="451316979"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Water_3" ID="{A2109DE8-C6A7-4C16-937B-988637C9F84C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rebound Water 4" ID="{E70AF9BA-74AB-4A1C-8A55-CEDCEADDB57B}" ShortID="409467132">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Water_4" ID="{8FCE4781-887A-4A71-A5E4-F398BF33E1D3}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Water\Rebound_Water_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="92901929"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Water_4" ID="{8FCE4781-887A-4A71-A5E4-F398BF33E1D3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rebound Water 5" ID="{C28CB9B7-8E49-49D4-B102-92DB49F9E7E5}" ShortID="812943163">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Water_5" ID="{4D7E2FE7-F7E8-4EF3-AE09-3086F741D9A4}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Water\Rebound_Water_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="471897048"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Water_5" ID="{4D7E2FE7-F7E8-4EF3-AE09-3086F741D9A4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Wpn Rbn Tile Rnd" ID="{EEE287C5-2607-4F80-AE58-516E1346E7D7}" ShortID="972172953">
+									<PropertyList>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+										</Reference>
+										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Rebound Tile 1" ID="{C93546ED-67CD-4CF4-8ED7-2874E04D9BA3}" ShortID="1042676690">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Tile_1" ID="{70F0F79D-D8B1-4277-A130-0EB0E18988C4}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Tile\Rebound_Tile_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="551791742"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Tile_1" ID="{70F0F79D-D8B1-4277-A130-0EB0E18988C4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rebound Tile 2" ID="{90F58798-3281-4364-BFB2-A1CDC7C8C36B}" ShortID="753288417">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Tile_2" ID="{FC9EF725-308C-4F13-A63F-9D438588555C}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Tile\Rebound_Tile_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="69208750"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Tile_2" ID="{FC9EF725-308C-4F13-A63F-9D438588555C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rebound Tile 3" ID="{D57FE085-BF36-4385-A527-4A5906DB64CE}" ShortID="71644321">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Tile_3" ID="{221D04A4-A81F-4C53-9E1B-E2129195F571}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Tile\Rebound_Tile_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="392575737"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Tile_3" ID="{221D04A4-A81F-4C53-9E1B-E2129195F571}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rebound Tile 4" ID="{DD501A2F-C235-478C-973B-947FE920F387}" ShortID="303004189">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Tile_4" ID="{9EF32090-6A9C-494A-BD7A-BEF4A37BF14E}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Tile\Rebound_Tile_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="465891872"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Tile_4" ID="{9EF32090-6A9C-494A-BD7A-BEF4A37BF14E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rebound Tile 5" ID="{ADD36A99-88B5-4BB2-ADF1-3B4664085126}" ShortID="174542535">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Tile_5" ID="{2423E378-5072-4C50-8F3A-EA35FAD52073}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Tile\Rebound_Tile_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="208637898"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Tile_5" ID="{2423E378-5072-4C50-8F3A-EA35FAD52073}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Wpn Rbn Metal Rnd" ID="{94926DC5-6289-4AF7-A279-C16459681048}" ShortID="224350787">
+									<PropertyList>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+										</Reference>
+										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Rebound Metal 1" ID="{E7C22D86-E3CA-4F47-A7F2-E0CC1BD79903}" ShortID="299465863">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Metal_1" ID="{BECAC625-06D7-4576-9FCF-0ED79B55E898}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Metal\Rebound_Metal_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="392428509"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Metal_1" ID="{BECAC625-06D7-4576-9FCF-0ED79B55E898}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rebound Metal 2" ID="{019F292E-C13B-48CF-BC15-0C1606F7A0B1}" ShortID="40992633">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Metal_2" ID="{9F271ECE-AE0E-4F6F-8668-309A4CD24105}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Metal\Rebound_Metal_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="245389173"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Metal_2" ID="{9F271ECE-AE0E-4F6F-8668-309A4CD24105}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rebound Metal 3" ID="{FBCD1778-1B41-4915-8DA1-8240769B5561}" ShortID="203414205">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Metal_3" ID="{BF554B04-045D-4C83-B526-11C66F4B4CE9}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Metal\Rebound_Metal_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1021610605"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Metal_3" ID="{BF554B04-045D-4C83-B526-11C66F4B4CE9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rebound Metal 4" ID="{1F9A085A-A7E8-40F0-8A93-77AF0F0D4E19}" ShortID="260823130">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Metal_4" ID="{3ADA576C-B467-465D-B0E1-A085EC5EE317}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Metal\Rebound_Metal_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="12388151"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Metal_4" ID="{3ADA576C-B467-465D-B0E1-A085EC5EE317}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rebound Metal 5" ID="{490EB2F3-2892-44BA-8FFC-26895094A59A}" ShortID="972164875">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Metal_5" ID="{1DC723D0-C244-4D0D-8656-6D6839362B3B}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Metal\Rebound_Metal_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="872731011"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Metal_5" ID="{1DC723D0-C244-4D0D-8656-6D6839362B3B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Wpn Rbn Wood Rnd" ID="{827891CC-3B8E-4D64-BE4D-C2ECD331C5E3}" ShortID="339080410">
+									<PropertyList>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+										</Reference>
+										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Rebound Wood 1" ID="{9DE0EA09-736A-4E53-947C-2634E4D6A81F}" ShortID="563768263">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Wood_1" ID="{FEA01FAA-39C8-4DDE-ADA8-6AC122C7D911}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Wood\Rebound_Wood_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="665962911"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Wood_1" ID="{FEA01FAA-39C8-4DDE-ADA8-6AC122C7D911}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rebound Wood 2" ID="{909F28F9-B04F-4362-A4E8-03730BF43983}" ShortID="1031722233">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Wood_2" ID="{D72310CD-F704-4F35-8EC2-7F39D962E9BF}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Wood\Rebound_Wood_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="540069960"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Wood_2" ID="{D72310CD-F704-4F35-8EC2-7F39D962E9BF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rebound Wood 3" ID="{29C0873F-E1F9-48C8-ABF5-01E23CCD4664}" ShortID="893222922">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Wood_3" ID="{07B3B76C-6A55-43A1-BA2B-05E3CD8ED215}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Wood\Rebound_Wood_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="623457741"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Wood_3" ID="{07B3B76C-6A55-43A1-BA2B-05E3CD8ED215}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rebound Wood 4" ID="{6534068A-3DEB-488A-9580-3730DA9AFB74}" ShortID="18676695">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Wood_4" ID="{B38572E8-CAEB-48C8-BCE4-E45C6276844A}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Wood\Rebound_Wood_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="975143875"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Wood_4" ID="{B38572E8-CAEB-48C8-BCE4-E45C6276844A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rebound Wood 5" ID="{0AD90FB5-20D4-4871-968C-7D9E2A4ED365}" ShortID="902099714">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Wood_5" ID="{1C1807AB-7F25-421D-BCA2-5544D7987779}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Wood\Rebound_Wood_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="721659278"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Wood_5" ID="{1C1807AB-7F25-421D-BCA2-5544D7987779}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Wpn Rbn Dirt Rnd" ID="{469344C6-0C24-45B0-B09B-98CEB3C27B43}" ShortID="662287787">
+									<PropertyList>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+										</Reference>
+										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Rebound Dirt 1" ID="{B333DB86-4289-4732-9580-4065CF73D462}" ShortID="134578430">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Dirt_1" ID="{99F00E72-015B-4C6E-B1C2-B33CE5A314FC}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Dirt\Rebound_Dirt_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="852867075"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Dirt_1" ID="{99F00E72-015B-4C6E-B1C2-B33CE5A314FC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rebound Dirt 2" ID="{4AC6EC7E-94D5-418B-8E18-66B72499407D}" ShortID="140667151">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Dirt_2" ID="{F7EB9660-1F76-4349-B984-30EDB9108881}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Dirt\Rebound_Dirt_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="615923765"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Dirt_2" ID="{F7EB9660-1F76-4349-B984-30EDB9108881}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rebound Dirt 3" ID="{A79BA510-8028-40FE-8EBE-4ABB3552C388}" ShortID="706131156">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Dirt_3" ID="{7511148A-2007-4199-98AE-3FA8A922F8F6}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Dirt\Rebound_Dirt_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="989537312"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Dirt_3" ID="{7511148A-2007-4199-98AE-3FA8A922F8F6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rebound Dirt 4" ID="{F7D40859-9A5D-4192-BDC3-E2AE37505A1D}" ShortID="850160220">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Dirt_4" ID="{F4FFE825-355A-49D7-B8AB-42344DD1E7CB}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Dirt\Rebound_Dirt_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="17796349"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Dirt_4" ID="{F4FFE825-355A-49D7-B8AB-42344DD1E7CB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rebound Dirt 5" ID="{92AAFD82-9F55-42F4-9672-C03B540239BF}" ShortID="141709202">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Dirt_5" ID="{C296DA33-09ED-411F-BF2E-C396582C5B5A}">
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Dirt\Rebound_Dirt_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="184309869"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Dirt_5" ID="{C296DA33-09ED-411F-BF2E-C396582C5B5A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Wpn Rbn Carpet Rnd" ID="{9B8912D2-38E9-40FB-A370-C0FF0DED24BA}" ShortID="135278889">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>21</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>32</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+										</Reference>
+										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Rebound Dirt 1" ID="{781290FB-EE8A-4387-93F1-42AAD121B785}" ShortID="408526056">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Dirt_1" ID="{F2E6D0CC-4BE9-4761-8E51-624FAA8D9678}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.00650781250000002"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.00861328125"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.0336875000000001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Dirt\Rebound_Dirt_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="3717785"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Dirt_1" ID="{F2E6D0CC-4BE9-4761-8E51-624FAA8D9678}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rebound Dirt 3" ID="{00158E58-F853-44D7-8AD7-1D9846C1C333}" ShortID="876485686">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Dirt_3" ID="{8FCE6C6B-DE97-4873-9451-417BF68C4C42}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0142853422619048"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0157890625"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.0520663132440476"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Dirt\Rebound_Dirt_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1013519635"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Dirt_3" ID="{8FCE6C6B-DE97-4873-9451-417BF68C4C42}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rebound Dirt 2" ID="{15659793-4633-402D-BDC9-2B9BDA0A7214}" ShortID="660841844">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Dirt_2" ID="{951910E5-8F46-483E-B92F-0E12550631F7}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.00525344122023815"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.00752197265625"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.00405947730654762"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.0318788364955357"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Dirt\Rebound_Dirt_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1004827237"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Dirt_2" ID="{951910E5-8F46-483E-B92F-0E12550631F7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rebound Dirt 4" ID="{C3A30EB3-43D1-48BC-9100-E9BB803E7E80}" ShortID="410724337">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Dirt_4" ID="{E07E36A8-CAF4-4C0F-BE1A-284E1DDF030A}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.015015625"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0113020833333333"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.045046875"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Dirt\Rebound_Dirt_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1015704705"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Dirt_4" ID="{E07E36A8-CAF4-4C0F-BE1A-284E1DDF030A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rebound Dirt 5" ID="{36BEF07D-28EC-4081-A2DF-76E5B69E71B6}" ShortID="958186502">
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rebound_Dirt_5" ID="{50D0BCC7-9807-443B-8456-8E93168289B9}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.00481249999999998"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.009625"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.04021875"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Weapon\Rebound\Rebound_Dirt\Rebound_Dirt_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="287721994"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rebound_Dirt_5" ID="{50D0BCC7-9807-443B-8456-8E93168289B9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{B49C45FA-FD1A-4C44-86EF-02D15993FF7D}"/>
+							</PositioningInfo>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{D6551E39-1884-4590-B09A-D78E584FD39B}" ShortID="751754155">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Highpass"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput" CompanyID="4095" PluginID="65535" PluginType="15">
+												<ObjectRef Name="Ball_Rebound_Angle" ID="{DFE04A3E-F6A7-4B1E-82A6-A9F0CE43572D}" WorkUnitID="{E6AAD01D-9BCC-4A6D-97FC-C26FA61D7FAC}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{F5B44ABF-C0AC-4858-87BA-C1BEC7A1443D}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-180</XPos>
+																<YPos>31</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>-0.21966</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>180</XPos>
+																<YPos>30</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+									<RTPC Name="" ID="{3FEF0BC0-998A-4792-A3AB-3E8300F41DBF}" ShortID="103131542">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput" CompanyID="4095" PluginID="65535" PluginType="15">
+												<ObjectRef Name="Ball_Rebound_Elevation" ID="{1395B58F-9EB1-4836-A058-59A86C5F81F5}" WorkUnitID="{E6AAD01D-9BCC-4A6D-97FC-C26FA61D7FAC}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{97AD01A8-A8AA-4F6C-A9CE-4DC7B7D11CCC}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-90</XPos>
+																<YPos>29</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>0.69633</XPos>
+																<YPos>2</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>90</XPos>
+																<YPos>29</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+									<RTPC Name="" ID="{3E8CFCC3-DD15-4706-8DC9-1CCBAAB717BF}" ShortID="796072334">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Volume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput" CompanyID="4095" PluginID="65535" PluginType="15">
+												<ObjectRef Name="Ball_Rebound_Velocity" ID="{3ABAF753-FE8B-4FBA-B231-1F6EA502DB15}" WorkUnitID="{E6AAD01D-9BCC-4A6D-97FC-C26FA61D7FAC}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{CC52C4AE-5B28-4122-913A-996711D040B7}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-23.47345</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>0.07853</XPos>
+																<YPos>-20.97466</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>0.21574</XPos>
+																<YPos>-19.03646</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>0.37805</XPos>
+																<YPos>-16.75759</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Exp1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>0.47534</XPos>
+																<YPos>-9.20923</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>0.59789</XPos>
+																<YPos>-5.05706</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>0.81361</XPos>
+																<YPos>-0.03619</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0.04866</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Wpn Rbn Water Rnd" ID="{13BFF005-7DAC-48FD-9E28-AAAD4104109D}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Wpn Rbn Grass Rnd" ID="{9FD5F9A7-490E-44B9-90F5-B1C90B7F3129}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Wpn Rbn Concrete Rnd" ID="{08CAD0B8-0D3D-444C-B0F2-112989DE841D}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Wpn Rbn Metal Rnd" ID="{94926DC5-6289-4AF7-A279-C16459681048}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Wpn Rbn Tile Rnd" ID="{EEE287C5-2607-4F80-AE58-516E1346E7D7}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Wpn Rbn Dirt Rnd" ID="{469344C6-0C24-45B0-B09B-98CEB3C27B43}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Wpn Rbn Wood Rnd" ID="{827891CC-3B8E-4D64-BE4D-C2ECD331C5E3}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Wpn Rbn Carpet Rnd" ID="{9B8912D2-38E9-40FB-A370-C0FF0DED24BA}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Dirt" ID="{7AA61B09-1F10-448F-89BB-A0471EEC6AF9}"/>
+										<ItemList>
+											<ItemRef Name="Wpn Rbn Dirt Rnd" ID="{469344C6-0C24-45B0-B09B-98CEB3C27B43}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Carpet" ID="{7C1BD82A-FD9D-41CE-BE21-45A22AEE073C}"/>
+										<ItemList>
+											<ItemRef Name="Wpn Rbn Carpet Rnd" ID="{9B8912D2-38E9-40FB-A370-C0FF0DED24BA}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Water" ID="{AD954638-5646-436E-9715-CFAD375D2316}"/>
+										<ItemList>
+											<ItemRef Name="Wpn Rbn Water Rnd" ID="{13BFF005-7DAC-48FD-9E28-AAAD4104109D}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Concrete" ID="{8856AF3B-B26D-4C77-A1B3-265681F4AE90}"/>
+										<ItemList>
+											<ItemRef Name="Wpn Rbn Concrete Rnd" ID="{08CAD0B8-0D3D-444C-B0F2-112989DE841D}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Tile" ID="{7D852F57-006E-4783-9456-E1BF5358D080}"/>
+										<ItemList>
+											<ItemRef Name="Wpn Rbn Tile Rnd" ID="{EEE287C5-2607-4F80-AE58-516E1346E7D7}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Metal" ID="{F5F5527C-3390-4B77-B5E6-085A90F6F01F}"/>
+										<ItemList>
+											<ItemRef Name="Wpn Rbn Metal Rnd" ID="{94926DC5-6289-4AF7-A279-C16459681048}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Grass" ID="{FFEBF29E-3EEB-4FB6-B62F-BB3B666A4551}"/>
+										<ItemList>
+											<ItemRef Name="Wpn Rbn Grass Rnd" ID="{9FD5F9A7-490E-44B9-90F5-B1C90B7F3129}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Wood" ID="{A4205DD8-0107-4734-A6EC-019ABC87F0B7}"/>
+										<ItemList>
+											<ItemRef Name="Wpn Rbn Wood Rnd" ID="{827891CC-3B8E-4D64-BE4D-C2ECD331C5E3}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{0C2E6815-DF61-43C1-B5F3-B5D1549E976A}">
+							<PropertyList>
+								<Property Name="PanY" Type="Real64" Value="100"/>
+							</PropertyList>
+						</Panner>
+						<Position Name="" ID="{39A77416-7AAA-47D7-B17F-36DCB933EF97}">
+							<ChildrenList>
+								<Path2D Name="Weapon_Path" ID="{7A61EEBE-E308-4026-B9DE-92C9908B4DCE}">
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>5</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+							</ChildrenList>
+						</Position>
+					</PositioningInfo>
+				</PropertyContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</Containers>
+</WwiseDocument>

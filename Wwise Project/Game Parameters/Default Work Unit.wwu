@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C3BADE0E-14A2-46D6-A56A-04D2BB31114B}" SchemaVersion="133">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{C3BADE0E-14A2-46D6-A56A-04D2BB31114B}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="ReflectionOrder" ID="{793EA2E0-0745-4627-8C7E-0207BF1FA9FD}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="4"/>
+						<Property Name="Min" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

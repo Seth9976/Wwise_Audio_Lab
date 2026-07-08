@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5BB84A73-B0C9-472F-9DCF-FC646D4841DC}" SchemaVersion="133">
+	<Events>
+		<WorkUnit Name="Ambiance" ID="{5BB84A73-B0C9-472F-9DCF-FC646D4841DC}" PersistMode="Standalone">
+			<Comment>A</Comment>
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="24"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Folder Name="Fountain" ID="{21585A72-0243-4268-90E6-22F0FDECAE39}" ShortID="894727254">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="15"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="Fountain_Splash_04" ID="{867CC7E3-99A8-4E46-A9F9-91B2685FFD4A}">
+							<ChildrenList>
+								<Action Name="" ID="{F0DF98B0-027B-4111-A97D-A262854BF24D}" ShortID="957268824">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Fountain Splash 04" ID="{782EAF20-123D-4AEC-AB51-946E030218E7}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Fountain_Splash_01" ID="{A5D6B7E8-FB6D-49AE-BD58-FD67EEB50444}">
+							<ChildrenList>
+								<Action Name="" ID="{3C84785E-BFE2-43EE-8659-9FBF7E69DB85}" ShortID="636720759">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Fountain Splash 01" ID="{1B6E0F90-4B4A-4018-8F83-7FD49127203A}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Fountain_Splash_03" ID="{50894845-C73F-44F6-9088-DB314268DBD5}">
+							<ChildrenList>
+								<Action Name="" ID="{41D1CDB4-3A55-4F76-BB2F-7DEF160BD3F0}" ShortID="551791662">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Fountain Splash 03" ID="{A4AC2195-AD94-40C7-8B46-22173F51DED4}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Fountain_Splash_02" ID="{DDF547A6-A42F-47DD-A2FD-764BA1C70545}">
+							<ChildrenList>
+								<Action Name="" ID="{803D5879-46EF-46CC-88D8-7D3873BB55D1}" ShortID="822598402">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Fountain Splash 02" ID="{8BEBCF9E-0DBC-4011-AE09-0DD1971FD0BE}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Fountain_Center" ID="{4B00CE01-3DEE-49FA-A291-7F6DE8091294}">
+							<ChildrenList>
+								<Action Name="" ID="{9C27963A-54A8-4684-899D-05C5606D6D87}" ShortID="179360936">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Fountain Center" ID="{63E6A845-63D7-44D6-91B9-44A5417ED820}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{64BD2B36-1EF2-4CE9-ADD0-2537625367FE}" ShortID="311600163">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Fountain Far" ID="{E3F3284C-7616-4189-9634-5A2FE4E6A30D}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Fauna" ID="{706614A7-DAB3-4926-BAB3-C14BEFE27574}" ShortID="185757416">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="Seagulls" ID="{8ED69F61-716B-469D-A438-9C2F703D898A}">
+							<ChildrenList>
+								<Action Name="" ID="{00880EB0-7BF4-4219-8A12-1A463E23C299}" ShortID="296816465">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Seagulls" ID="{ED1BAA06-051B-40C2-A9F0-00DF8400B22E}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Crickets" ID="{A8AE9423-0FE1-4C89-BF2C-2D7CE6452433}">
+							<ChildrenList>
+								<Action Name="" ID="{4EB756A8-827A-4379-8D3B-2A68F48FEEBD}" ShortID="435435770">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="OPEN COURT Crickets" ID="{9D12F5AB-BD72-4139-B04F-28903F7D95AA}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Pigeons" ID="{8E2A9A98-FE52-4695-BBE1-49575DA26721}">
+							<ChildrenList>
+								<Action Name="" ID="{58949984-0E80-464A-9C63-98A694089A08}" ShortID="828068550">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="OPEN COURT Pigeons" ID="{FD856E92-4329-4D64-9352-CD678BBD3DFC}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Cicada" ID="{D3178A01-B6D5-441E-A4C7-F69C6C1003C7}">
+							<ChildrenList>
+								<Action Name="" ID="{D9CC7992-5355-4040-BB56-DE805305387B}" ShortID="669179311">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="OPEN COURT Crickets" ID="{9D12F5AB-BD72-4139-B04F-28903F7D95AA}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Bushes_01" ID="{97A12F52-E49C-4B08-9B1F-65B97FB9CE97}">
+							<ChildrenList>
+								<Action Name="" ID="{1B421B4C-3C0B-4A8D-991E-5A08F2D390DF}" ShortID="45840461">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="BUSHES Insects 01" ID="{EEC7555D-FC77-4669-BA2B-F64AA62944E6}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Bushes_02" ID="{670C8226-06BD-4B92-B9CF-209B46965C52}">
+							<ChildrenList>
+								<Action Name="" ID="{2958406C-0764-4701-99F5-900ACD37BFBB}" ShortID="786744595">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="BUSHES Insects 02" ID="{7D4A55A7-0C74-45AC-A2C0-A29C93E92186}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Street" ID="{CE5C78CC-2CAA-4DA1-A811-41B5EAFA8B1B}">
+							<ChildrenList>
+								<Action Name="" ID="{703133B8-22F9-4922-9DFB-48382FB5E248}" ShortID="702165787">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="STREET Randoms" ID="{3DDEB7CB-3CA9-4E60-A12D-498BCF2ED4B2}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Birds" ID="{C20EDB85-4B1F-494C-ACFD-153C6E5B7E9B}">
+							<ChildrenList>
+								<Action Name="" ID="{91288ECA-7387-48E5-AEB9-C7615D63448B}" ShortID="355004559">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="FOUNTAIN TREES Birds" ID="{BDB714CA-34F2-4334-BCD9-62B6FD8C7EA3}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Insects" ID="{4FA3BBA6-FBC8-481E-B947-550523A994E5}">
+							<ChildrenList>
+								<Action Name="" ID="{F2F3A8C5-1053-4DEE-AF0A-E04669F7ABEC}" ShortID="141681827">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="FOUNTAIN TREES Insects" ID="{A83676D9-A6AE-4615-9992-BBCB5471EB98}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Elements" ID="{A0D01398-7261-4128-BAF1-044B1C9F36D8}" ShortID="590148951">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="9"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="CampFire" ID="{3F2DF207-F51E-46A1-8948-98A1EFB640F5}">
+							<ChildrenList>
+								<Action Name="" ID="{A16471A1-0775-4293-921F-1B25DAA25166}" ShortID="642031935">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Campfire Crackling" ID="{4719D989-BCBE-4A57-8C8F-FC7BEBF8276C}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{6A4A6D15-6B7A-416D-A9E3-B04AEEDEA076}" ShortID="2699136">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Campfire Combustion" ID="{D4C8CC1F-1252-4ADD-938B-C92AEEF94BEE}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{DC055B94-492E-4902-B12D-52F9B034CED1}" ShortID="1036729234">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Campfire Rumble" ID="{08FF7316-C8BD-42FD-82CC-0D9B0CB83C9A}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="AMB_Indoor" ID="{D17DCDCD-72E0-42FB-B454-E30602550FDC}" ShortID="23574193">
+					<ChildrenList>
+						<Event Name="AMB_House_RT_3" ID="{119574DB-30C3-47FD-AB44-944298656C8F}">
+							<ChildrenList>
+								<Action Name="" ID="{7ACA52BB-534D-46B5-8D93-FEE5A1F693DB}" ShortID="696953894">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="AMB House RT 3 BLD" ID="{E4F1AB74-BCF9-4C21-BC7C-91B7A0754C10}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AMB_Astrolabe_Out" ID="{1FB8D489-61C6-4FFC-8910-1E6A8432413F}">
+							<ChildrenList>
+								<Action Name="" ID="{AF27A0CE-2005-43E5-89FF-8F74E7B77E2C}" ShortID="557437463">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="AMB Astrolabe" ID="{E2060905-4CCE-4023-B45F-3BD453D937A0}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AMB_Astrolabe" ID="{72229775-0DA0-45A5-A944-0848CEF65526}">
+							<ChildrenList>
+								<Action Name="" ID="{5393EDB6-D421-496E-9EAB-D566AD057297}" ShortID="937634895">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="AMB Astrolabe" ID="{E2060905-4CCE-4023-B45F-3BD453D937A0}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{5E08CB13-5310-4FD6-A26A-DE21F78A8E4D}" ShortID="498588575">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="36"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+										<Property Name="SeekPercent" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{8746C3D3-2ABB-42A6-BB5A-1D7B3F33303A}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="80"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="AMB Astrolabe" ID="{E2060905-4CCE-4023-B45F-3BD453D937A0}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AMB_House_RT_2" ID="{89F13A04-8215-4508-A9A0-CE501F9B0850}">
+							<ChildrenList>
+								<Action Name="" ID="{47D1D451-D272-4EDE-9D0C-0AC6BACDBAD1}" ShortID="2405870">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="AMB House RT 2 BLD" ID="{29CC969C-8E16-4F8F-BF40-F4D3B86EC284}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AMB_TrainStation_Roof" ID="{DC1D9885-F070-48B2-95C9-90E7876F22D6}">
+							<ChildrenList>
+								<Action Name="" ID="{39F0C4B7-F548-44FB-9BCB-473A730B916A}" ShortID="190781913">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="Delay" Type="Real64" Value="0.01"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="AMB Train Station Int BLD" ID="{5DEA778D-7238-439F-A5DF-89BC1D6F6B84}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{2DBA5467-CC2E-4B4F-A075-D4A37CE2F811}" ShortID="305841287">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="36"/>
+										<Property Name="Delay" Type="Real64" Value="0.01"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+										<Property Name="SeekPercent" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{4F32DB4E-07AC-4E9E-BCF2-79E4A0D4F250}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="80"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="AMB Train Station Int BLD" ID="{5DEA778D-7238-439F-A5DF-89BC1D6F6B84}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AMB_Hall" ID="{FF0603DB-677D-426A-B265-0A1BED7AFFD3}">
+							<ChildrenList>
+								<Action Name="" ID="{26339CD1-A195-483A-A67E-CEE8D2778C30}" ShortID="611308376">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="AMB Hall BLD" ID="{2BFB0AC2-DF5A-4AE0-8B2E-DB7DAAE0BF43}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AMB_TrainStation_NoRoof" ID="{D6EEF438-AB33-48FB-8E29-76E5B96FCEF8}">
+							<ChildrenList>
+								<Action Name="" ID="{E2FDB45C-ACE7-4CDA-BCF3-8D77B0D82A13}" ShortID="172420995">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="AMB Train Station Ext BLD" ID="{DE81F53B-9F1D-49A8-BF09-EECDA06A4EC1}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{418D94D9-8E91-4510-85D7-E61AAF2C4C3D}" ShortID="573818036">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="36"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+										<Property Name="SeekPercent" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{4B9B8BA7-85F7-4D13-B10D-E38606BDB9D8}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="80"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="AMB Train Station Ext BLD" ID="{DE81F53B-9F1D-49A8-BF09-EECDA06A4EC1}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A318C401-5DA8-4853-BD9B-C6F2088E4E02}" ShortID="956191646">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AMB Train Station Int BLD_NoRoof" ID="{0CCD736E-5E81-42D9-92D9-914757448BBA}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{8171560E-A0D6-4085-B2CB-F19F2A0C2B3E}" ShortID="746523893">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="36"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+										<Property Name="SeekPercent" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{380CECC1-A8A4-4941-A61F-A9C926F509CC}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="80"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AMB Train Station Int BLD_NoRoof" ID="{0CCD736E-5E81-42D9-92D9-914757448BBA}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AMB_House_RT_1" ID="{709BCFA2-A02A-415C-BC2A-E41FCC548DBA}">
+							<ChildrenList>
+								<Action Name="" ID="{637D9480-4032-4E29-A0A9-AD692DE5112B}" ShortID="955224367">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="AMB House RT 1 BLD" ID="{275BED80-BB95-4649-8016-1DF7A7DD0292}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="AMB_Outdoor" ID="{53873929-7DF8-40E2-BFDE-D594393F5717}" ShortID="464482653">
+					<ChildrenList>
+						<Event Name="AMB_Outdoor" ID="{95886794-96E3-4363-AA8D-1874998A2753}">
+							<ChildrenList>
+								<Action Name="" ID="{722D2115-0237-453E-A0C3-E66BB9113383}" ShortID="977903739">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Temp Silence" ID="{DF054DC8-1CE6-42F4-989D-38C420F54845}" WorkUnitID="{4B333C99-0FD6-4F1E-9935-663A9B31461E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AMB_Ocean" ID="{4F9D409C-1088-49E2-8E7E-480B4E36BFA2}">
+							<ChildrenList>
+								<Action Name="" ID="{1DBF29A5-39CD-4950-ADAD-77CBC0C9D08C}" ShortID="404465123">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="AMB Ocean BLD" ID="{0F0F2417-4C04-4DE8-B543-43355F0F5E00}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{623E8053-B40C-472C-8B12-5A07CF292BB9}" ShortID="287990991">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="36"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+										<Property Name="SeekPercent" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{44D590A2-B810-4BF4-8914-B075A24B9DFD}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="80"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="AMB Ocean BLD" ID="{0F0F2417-4C04-4DE8-B543-43355F0F5E00}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{BE876B7F-EFD0-4B4D-AB4E-6C2E6610AF10}" ShortID="851178441">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="AMB Ocean Rumbling Waves BLD" ID="{8C27ABBD-D55D-4A49-AF58-7C95D2356EBB}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{4F5E4BB1-3E77-437F-B893-D155310CECC6}" ShortID="201552966">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="36"/>
+										<Property Name="SeekPercent" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{67F318D5-E016-492D-884E-958BAC79CE16}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="80"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="AMB Ocean Rumbling Waves BLD" ID="{8C27ABBD-D55D-4A49-AF58-7C95D2356EBB}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AMB_Football_Field" ID="{E83DAC20-5C66-44C8-93B7-DC8EF84FDFFD}">
+							<ChildrenList>
+								<Action Name="" ID="{73435718-3EB5-4CF9-973E-8B9CAF16FA55}" ShortID="643620803">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="AMB Football Field BLD" ID="{92ED655B-067F-421B-9739-067B8C0AEE1E}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B00DB6B1-20CF-4F59-A7FE-5EB7A90DF616}" ShortID="535787813">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="36"/>
+										<Property Name="FadeTime" Type="Real64" Value="3"/>
+										<Property Name="SeekPercent" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{3D59D033-A6D1-44B6-809C-A76A708D9FFF}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="80"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="AMB Football Field BLD" ID="{92ED655B-067F-421B-9739-067B8C0AEE1E}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AMB_Fountain_Trees" ID="{B9304581-D36E-4E1B-9091-694DE1BCD0BB}">
+							<ChildrenList>
+								<Action Name="" ID="{49C2EC0F-4DFC-4DBB-BE4C-9A946CCF0AE6}" ShortID="535658155">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="AMB Fountain Trees BLD" ID="{61012D29-E4B1-46C9-9180-0F7EB895642F}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{1FB3086F-227E-442A-8BC0-EB6644D95FB0}" ShortID="377831583">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="36"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+										<Property Name="SeekPercent" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{CBD3D094-940E-4C2A-914A-405B71058A16}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="80"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="AMB Fountain Trees BLD" ID="{61012D29-E4B1-46C9-9180-0F7EB895642F}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{5E21F92D-04BB-412F-8485-09882CA56CF9}" ShortID="268012203">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AMB Football Field BLD_Trees" ID="{99D58245-CFAE-4780-87D5-29C608ACB6BB}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{681920E3-DA64-409E-947B-48EDFF1BB82F}" ShortID="347067495">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="36"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+										<Property Name="SeekPercent" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{E6438B52-8E58-4EA8-98A9-3A3FF660BC5E}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="80"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AMB Football Field BLD_Trees" ID="{99D58245-CFAE-4780-87D5-29C608ACB6BB}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AMB_Ocean_Rumbling_Waves" ID="{04EA907F-9023-4472-AB47-5A3C4CABA20F}">
+							<ChildrenList>
+								<Action Name="" ID="{05592DBF-F6C6-4777-9C16-DF66311DA127}" ShortID="1056417265">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="AMB Ocean Rumbling Waves BLD" ID="{8C27ABBD-D55D-4A49-AF58-7C95D2356EBB}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{F3A862A7-33AF-4598-82AC-345B627B062C}" ShortID="371981097">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="36"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+										<Property Name="SeekPercent" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{57F6B199-A6A1-40E9-881B-E103428F1036}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="80"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="AMB Ocean Rumbling Waves BLD" ID="{8C27ABBD-D55D-4A49-AF58-7C95D2356EBB}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AMB_Town" ID="{EA769962-1F36-446E-8A5A-BA173787FA02}">
+							<Comment>Amb - OK
+Quad - Missing
+</Comment>
+							<ChildrenList>
+								<Action Name="" ID="{0875473C-5300-4071-862F-EF58760C5EB3}" ShortID="877864019">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="2.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="AMB Town BLD" ID="{C7E00741-C996-48CC-A09E-F84D7DA8DA7F}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{617547E2-55A8-4A69-BA06-251221D9CECF}" ShortID="37056168">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="36"/>
+										<Property Name="FadeTime" Type="Real64" Value="2.5"/>
+										<Property Name="SeekPercent" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{BE049A0F-8939-4056-94D6-8122C4A42720}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="80"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="AMB Town BLD" ID="{C7E00741-C996-48CC-A09E-F84D7DA8DA7F}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

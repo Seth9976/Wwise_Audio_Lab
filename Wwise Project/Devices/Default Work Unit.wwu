@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{698335CB-68E1-4473-8A67-3F401E59F0EA}" SchemaVersion="133">
+	<Devices>
+		<WorkUnit Name="Default Work Unit" ID="{698335CB-68E1-4473-8A67-3F401E59F0EA}" PersistMode="Standalone">
+			<ChildrenList>
+				<AudioDevice Name="System" ID="{8AA06FCD-0852-4718-9E8F-8BAC9170C99B}" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+					<PropertyList>
+						<Property Name="Allow3DAudio" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<EffectSlot Name="" ID="{70E79CC2-C908-492E-BA03-3E7CCA25D026}" ShortID="1854280"/>
+							<EffectSlot Name="" ID="{1000AC6C-B0D1-41CD-9167-7EBE3C2BC3BD}" ShortID="37445996"/>
+							<EffectSlot Name="" ID="{B1E881D3-7C8F-4834-AC77-8A379757CF65}" ShortID="91877612"/>
+							<EffectSlot Name="" ID="{B7BE38A1-C18C-4C6D-AC66-3F08F6635C3B}" ShortID="200170313">
+								<ReferenceList>
+									<Reference Name="Effect" PluginName="Mastering Suite" CompanyID="0" PluginID="186" PluginType="3">
+										<ObjectRef Name="HomeCinema" ID="{F9951DC8-664E-4B07-81CF-61716236F00A}" WorkUnitID="{0D1C409E-A735-471E-A538-63B18D993BE9}"/>
+									</Reference>
+								</ReferenceList>
+							</EffectSlot>
+						</ObjectList>
+					</ObjectLists>
+				</AudioDevice>
+				<AudioDevice Name="No_Output" ID="{DF469335-6937-4460-978B-F9B23D2EACC6}" PluginName="No Output" CompanyID="0" PluginID="181" PluginType="7"/>
+				<AudioDevice Name="Disabled_3DAudio" ID="{CEE54C94-EC7B-4830-85B6-B3E73F4DA600}" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+					<PropertyList>
+						<Property Name="AllowSystemAudioObjects" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<EffectSlot Name="" ID="{03F19A82-F5DB-4E06-8E5B-FDB533D480AA}" ShortID="908499337"/>
+							<EffectSlot Name="" ID="{1D3031A5-954B-44C3-B536-3EEF180C5D62}" ShortID="147127286"/>
+							<EffectSlot Name="" ID="{694BB008-122D-41FC-942A-15A37FB96942}" ShortID="74981011"/>
+							<EffectSlot Name="" ID="{719753E7-6CB8-4588-9307-7BE69A61690C}" ShortID="616182827">
+								<ReferenceList>
+									<Reference Name="Effect" PluginName="Mastering Suite" CompanyID="0" PluginID="186" PluginType="3">
+										<ObjectRef Name="HomeCinema" ID="{F9951DC8-664E-4B07-81CF-61716236F00A}" WorkUnitID="{0D1C409E-A735-471E-A538-63B18D993BE9}"/>
+									</Reference>
+								</ReferenceList>
+							</EffectSlot>
+						</ObjectList>
+					</ObjectLists>
+				</AudioDevice>
+				<AudioDevice Name="Enabled_3DAudio_Disabled_SystemAudioObjects" ID="{AF51FD83-A8B9-46D3-83F0-5ADC64F32FAB}" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+					<PropertyList>
+						<Property Name="Allow3DAudio" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="AllowSystemAudioObjects" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<EffectSlot Name="" ID="{E307AE81-2FD3-4B57-BB1B-4FF217E9E9E6}" ShortID="178102664"/>
+							<EffectSlot Name="" ID="{A74B9828-F52C-41FA-8CEB-9BADAC7CF03B}" ShortID="74658987"/>
+							<EffectSlot Name="" ID="{A99101D2-53DB-4691-B29D-D81A21EEFB0D}" ShortID="183679087"/>
+							<EffectSlot Name="" ID="{1E5F7194-22AA-411B-BE26-ACBE0A98E1D5}" ShortID="358812083">
+								<ReferenceList>
+									<Reference Name="Effect" PluginName="Mastering Suite" CompanyID="0" PluginID="186" PluginType="3">
+										<ObjectRef Name="HomeCinema" ID="{F9951DC8-664E-4B07-81CF-61716236F00A}" WorkUnitID="{0D1C409E-A735-471E-A538-63B18D993BE9}"/>
+									</Reference>
+								</ReferenceList>
+							</EffectSlot>
+						</ObjectList>
+					</ObjectLists>
+				</AudioDevice>
+				<AudioDevice Name="Enabled_3DAudio_Enabled_SystemAudioObjects" ID="{8AD12A61-8D76-4C35-B275-954BD69B59A8}" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+					<PropertyList>
+						<Property Name="Allow3DAudio" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="MinSystemAudioObjectsRequired" Type="Uint16">
+							<ValueList>
+								<Value>15</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<EffectSlot Name="" ID="{57984E71-D3C2-478F-BD2A-25591A762668}" ShortID="185028488"/>
+							<EffectSlot Name="" ID="{50006056-CA53-4047-8964-8CC767CCC411}" ShortID="260868750"/>
+							<EffectSlot Name="" ID="{A0DC828B-AAAF-403C-AA0D-43E26425C914}" ShortID="514506347"/>
+							<EffectSlot Name="" ID="{5872A9C1-DD23-43AC-A2F6-9548A67AD1F2}" ShortID="963428347">
+								<ReferenceList>
+									<Reference Name="Effect" PluginName="Mastering Suite" CompanyID="0" PluginID="186" PluginType="3">
+										<ObjectRef Name="HomeCinema" ID="{F9951DC8-664E-4B07-81CF-61716236F00A}" WorkUnitID="{0D1C409E-A735-471E-A538-63B18D993BE9}"/>
+									</Reference>
+								</ReferenceList>
+							</EffectSlot>
+						</ObjectList>
+					</ObjectLists>
+				</AudioDevice>
+			</ChildrenList>
+		</WorkUnit>
+	</Devices>
+</WwiseDocument>

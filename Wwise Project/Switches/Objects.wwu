@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8BA09415-25F1-484E-AA25-58E4CD40B38A}" SchemaVersion="133">
+	<Switches>
+		<WorkUnit Name="Objects" ID="{8BA09415-25F1-484E-AA25-58E4CD40B38A}" PersistMode="Standalone">
+			<Comment>A</Comment>
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="13"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<SwitchGroup Name="Radio_Program" ID="{A7ED41C7-5288-4B78-95E0-337BC7EEB555}">
+					<ChildrenList>
+						<Switch Name="Talk" ID="{DCBB10D8-EA4F-45F4-9701-459A45C079A6}"/>
+						<Switch Name="Music" ID="{98DB0725-CE64-4228-8365-353F37199D73}"/>
+						<Switch Name="White_Noise" ID="{26F950E3-F69B-4E46-8199-5B4964B4B899}"/>
+						<Switch Name="Campfire" ID="{372AE7B1-C1BB-47D6-B176-1801955FC7CA}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Door_Material" ID="{B358144A-7456-46FB-B549-FDDECE42EBF3}">
+					<ChildrenList>
+						<Switch Name="Wood" ID="{D8840A7D-1C68-4DB9-A0DB-1FA1691F6DE0}"/>
+						<Switch Name="Glass" ID="{1CFFA170-C6EC-4E65-82DD-C3502FC500A3}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Door_Movement" ID="{E61F903B-DB68-4AAD-AA30-DEE68771CD8C}">
+					<ChildrenList>
+						<Switch Name="Opening" ID="{4F7FC09C-1B62-4500-B978-9AD5EA35069B}"/>
+						<Switch Name="Closing" ID="{01389A70-D1E8-4E6F-9CEA-D605DDB9CD33}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

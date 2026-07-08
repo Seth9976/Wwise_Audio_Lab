@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{12DF4990-7DB4-43C3-B8A3-ED26EDC16B3D}" SchemaVersion="133">
+	<GameParameters>
+		<WorkUnit Name="Character" ID="{12DF4990-7DB4-43C3-B8A3-ED26EDC16B3D}" PersistMode="Standalone">
+			<Comment>A</Comment>
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="3"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<GameParameter Name="Footsteps_Speed" ID="{673850B9-4515-4154-AC3D-F0718EE38F22}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

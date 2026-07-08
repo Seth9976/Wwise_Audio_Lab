@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C514809B-6AA2-42B8-98D6-35EAB05EA768}" SchemaVersion="133">
+	<Switches>
+		<WorkUnit Name="Weapon" ID="{C514809B-6AA2-42B8-98D6-35EAB05EA768}" PersistMode="Standalone">
+			<Comment>A</Comment>
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="4"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<SwitchGroup Name="Weapon_Type" ID="{64FD6507-EE06-4B10-8340-903490A51F82}">
+					<ChildrenList>
+						<Switch Name="Designed" ID="{00D9BAF2-9EED-401B-BEAF-2E594E01DC8F}"/>
+						<Switch Name="Dry" ID="{5245DE50-9F9D-4ABB-AD6C-782C3E682E24}"/>
+						<Switch Name="Scream" ID="{BE7132BC-B1FC-4813-A270-19E5AD0CD938}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

@@ -1,0 +1,1215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}" SchemaVersion="133">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<PropertyList>
+						<Property Name="CenterPercentage" Type="int32">
+							<ValueList>
+								<Value>100</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{8AA06FCD-0852-4718-9E8F-8BAC9170C99B}" WorkUnitID="{698335CB-68E1-4473-8A67-3F401E59F0EA}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Environmental_AuxBusses" ID="{EC339CEF-54ED-4C0A-8D7D-0E31243A523C}">
+							<PropertyList>
+								<Property Name="CenterPercentage" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ChildrenList>
+								<Bus Name="EarlyReflections" ID="{A9000892-022C-4DA4-9074-EB03B5C3982F}">
+									<PropertyList>
+										<Property Name="CenterPercentage" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ChildrenList>
+										<AuxBus Name="FirstPerson" ID="{3595F519-5F5B-4401-AD56-BEED0D5AC609}">
+											<PropertyList>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>768</Value>
+													</ValueList>
+												</Property>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="EnableDiffraction" Type="bool" Value="False"/>
+												<Property Name="GameAuxSendLPF" Type="int16">
+													<ValueList>
+														<Value>30</Value>
+													</ValueList>
+												</Property>
+												<Property Name="GameAuxSendVolume" Type="Real64">
+													<ValueList>
+														<Value>-18</Value>
+													</ValueList>
+												</Property>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Reflect_ThirdPerson" ID="{D2E7FC8B-4B0A-4FE5-8BF4-7ABE3F795022}" WorkUnitID="{B1599515-4D68-472B-A1FE-4BE786FB44AA}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<EffectSlot Name="" ID="{EFACCF03-31A9-414A-8639-866845013E5E}" ShortID="757266971">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Reflect" CompanyID="0" PluginID="171" PluginType="3">
+																<ObjectRef Name="Reflect_FirstPerson" ID="{46253F03-D5C3-43A8-8B8B-C4323ED05719}" WorkUnitID="{EF1E5E7E-07E4-4225-9BB1-A31BEFCF1137}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</ObjectList>
+												<ObjectList Name="RTPC">
+													<RTPC Name="" ID="{B4F59364-FC84-49B5-8A98-444873772BEB}" ShortID="923782394">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput" CompanyID="4095" PluginID="65535" PluginType="15">
+																<ObjectRef Name="DynamicER" ID="{7A4F77EC-E9B9-4BC4-A72F-2847A8208EB2}" WorkUnitID="{C9D11938-1035-430D-BD4F-C5B7B7C00CB2}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{827CA4C8-7A6B-4901-A122-700AFDC92705}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</ObjectList>
+											</ObjectLists>
+										</AuxBus>
+										<AuxBus Name="ThirdPerson" ID="{6758FB9E-76D6-42DE-A2B0-EE031329989B}">
+											<PropertyList>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>768</Value>
+													</ValueList>
+												</Property>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Reflect_ThirdPerson" ID="{D2E7FC8B-4B0A-4FE5-8BF4-7ABE3F795022}" WorkUnitID="{B1599515-4D68-472B-A1FE-4BE786FB44AA}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<EffectSlot Name="" ID="{EFA710D8-C35E-42D5-A6EA-047BB3872025}" ShortID="910440729">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Reflect" CompanyID="0" PluginID="171" PluginType="3">
+																<ObjectRef Name="Reflect_ThirdPerson" ID="{71F20BEC-5564-47C4-BD88-FB04D44F074B}" WorkUnitID="{EF1E5E7E-07E4-4225-9BB1-A31BEFCF1137}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</ObjectList>
+												<ObjectList Name="RTPC">
+													<RTPC Name="" ID="{DC24C9C5-C494-4C1C-8EC1-6B566EE9A440}" ShortID="597393868">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput" CompanyID="4095" PluginID="65535" PluginType="15">
+																<ObjectRef Name="DynamicER" ID="{7A4F77EC-E9B9-4BC4-A72F-2847A8208EB2}" WorkUnitID="{C9D11938-1035-430D-BD4F-C5B7B7C00CB2}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{8EE0EFB9-9E84-49DB-AAB5-4198AD595E2B}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</ObjectList>
+											</ObjectLists>
+										</AuxBus>
+									</ChildrenList>
+								</Bus>
+								<Bus Name="LateReverb" ID="{F8C3A023-9B4E-4B11-B6F7-F5AC31C7A17B}">
+									<PropertyList>
+										<Property Name="CenterPercentage" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ChildrenList>
+										<AuxBus Name="Astrolabe" ID="{2B9F172E-475A-41F9-B3BC-C8D9704ABE09}">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>3840</Value>
+													</ValueList>
+												</Property>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="EnableDiffraction" Type="bool" Value="False"/>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<EffectSlot Name="" ID="{C82D3DFC-77BE-4178-9935-147F37E3F0E0}" ShortID="173120199">
+														<ReferenceList>
+															<Reference Name="Effect" CompanyID="4095" PluginID="65535" PluginType="15">
+																<ObjectRef Name="Hall_Large_Dark" ID="{0F6A7D6D-131C-4650-9561-FC05F5C7A37B}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</ObjectList>
+											</ObjectLists>
+										</AuxBus>
+										<AuxBus Name="House_Living" ID="{AD761E7C-25F0-40A3-B858-FEB8A7A9DD76}">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>3840</Value>
+													</ValueList>
+												</Property>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="EnableDiffraction" Type="bool" Value="False"/>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<EffectSlot Name="" ID="{2155C74C-86B1-4CF3-803B-AD01099BDE1B}" ShortID="1016708569">
+														<ReferenceList>
+															<Reference Name="Effect" CompanyID="4095" PluginID="65535" PluginType="15">
+																<ObjectRef Name="House_Corridor" ID="{25C053EC-845F-408D-9A34-8D0714EAF8E7}" WorkUnitID="{7574C1D1-6DBC-46E2-8C5B-FA1273788142}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</ObjectList>
+											</ObjectLists>
+										</AuxBus>
+										<AuxBus Name="TrainStation" ID="{78D11360-D063-40BB-92AA-BB8B4EB62246}">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>516</Value>
+													</ValueList>
+												</Property>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+												<Property Name="OutputBusHighpass" Type="int16">
+													<ValueList>
+														<Value>10</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<EffectSlot Name="" ID="{33E1A691-0321-443C-91BC-FA6FCB9DEF1F}" ShortID="482970154">
+														<ReferenceList>
+															<Reference Name="Effect">
+																<Custom>
+																	<Effect Name="Parametric EQ (Custom)" ID="{01E921F0-CB42-42FA-A1B2-3DDCB4B71320}" ShortID="839471265" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																		<PropertyList>
+																			<Property Name="FilterTypeBand3" Type="int32" Value="1"/>
+																			<Property Name="FrequencyBand3" Type="Real32" Value="150"/>
+																			<Property Name="OnOffBand1" Type="bool" Value="False"/>
+																			<Property Name="OnOffBand2" Type="bool" Value="False"/>
+																		</PropertyList>
+																	</Effect>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+													<EffectSlot Name="" ID="{CBBC76A9-997A-4C0F-9820-D8424795FCC7}" ShortID="201269468">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																<ObjectRef Name="Medium_Church_AmbisonicsIR" ID="{5F6FA0AD-0B18-44A9-A509-23001258F19B}" WorkUnitID="{7574C1D1-6DBC-46E2-8C5B-FA1273788142}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</ObjectList>
+											</ObjectLists>
+										</AuxBus>
+										<AuxBus Name="House_MediumRoom" ID="{4B755936-B267-43A0-AFB0-B457C70B21D1}">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>3840</Value>
+													</ValueList>
+												</Property>
+												<Property Name="BusVolume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="EnableDiffraction" Type="bool" Value="False"/>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<EffectSlot Name="" ID="{E90B79E4-00F0-4475-8437-8F2D39D6B9D4}" ShortID="388513799">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																<ObjectRef Name="House_MediumRoom" ID="{EA564EA5-5B55-45EE-B0A9-AC6548BCD7B3}" WorkUnitID="{7574C1D1-6DBC-46E2-8C5B-FA1273788142}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</ObjectList>
+											</ObjectLists>
+										</AuxBus>
+										<AuxBus Name="Mezzanine1" ID="{2AA6A75E-0F7B-411F-8B81-C92E9E1F99A9}">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>3840</Value>
+													</ValueList>
+												</Property>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="EnableDiffraction" Type="bool" Value="False"/>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<EffectSlot Name="" ID="{E41D5DB9-0D94-447B-9F3E-7584AA413F4F}" ShortID="444554977">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																<ObjectRef Name="Mezzanine" ID="{B8E8B388-D45F-4548-B0E2-59F6E1CC1DAF}" WorkUnitID="{7574C1D1-6DBC-46E2-8C5B-FA1273788142}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</ObjectList>
+											</ObjectLists>
+										</AuxBus>
+										<AuxBus Name="House_Corridor" ID="{335B9D1F-6D6A-4D30-9AB8-75E23DFF0836}">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>3840</Value>
+													</ValueList>
+												</Property>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="EnableDiffraction" Type="bool" Value="False"/>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<EffectSlot Name="" ID="{0EAFE804-A3A1-4DBF-B4FB-96EF1CEEA325}" ShortID="67367662">
+														<ReferenceList>
+															<Reference Name="Effect" CompanyID="4095" PluginID="65535" PluginType="15">
+																<ObjectRef Name="House_Corridor" ID="{25C053EC-845F-408D-9A34-8D0714EAF8E7}" WorkUnitID="{7574C1D1-6DBC-46E2-8C5B-FA1273788142}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</ObjectList>
+											</ObjectLists>
+										</AuxBus>
+										<AuxBus Name="Mezzanine2" ID="{49C5427B-30AD-40AC-8054-4FC1E0B69A06}">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>3840</Value>
+													</ValueList>
+												</Property>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="EnableDiffraction" Type="bool" Value="False"/>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<EffectSlot Name="" ID="{DEABA659-4FAB-494D-8A02-4F43C73EC8F9}" ShortID="235119114">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																<ObjectRef Name="Mezzanine" ID="{B8E8B388-D45F-4548-B0E2-59F6E1CC1DAF}" WorkUnitID="{7574C1D1-6DBC-46E2-8C5B-FA1273788142}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</ObjectList>
+											</ObjectLists>
+										</AuxBus>
+										<AuxBus Name="House_SmallRoom" ID="{FE75614A-F335-4573-BC8D-6F286F05DCBE}">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>3840</Value>
+													</ValueList>
+												</Property>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="EnableDiffraction" Type="bool" Value="False"/>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<EffectSlot Name="" ID="{988E4E15-BBCD-49ED-B9EC-A3F415AE4B34}" ShortID="888052008">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																<ObjectRef Name="House_SmallRoom" ID="{71BFD12C-3ADA-47F9-BFC3-1DEF827E7DB2}" WorkUnitID="{7574C1D1-6DBC-46E2-8C5B-FA1273788142}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</ObjectList>
+											</ObjectLists>
+										</AuxBus>
+										<AuxBus Name="Outside" ID="{3A76CCB0-F9EA-48C9-99B9-0E12D5A82A2D}">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>3840</Value>
+													</ValueList>
+												</Property>
+												<Property Name="BusVolume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="EnableDiffraction" Type="bool" Value="False"/>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+												<Property Name="OutputBusLowpass" Type="int16">
+													<ValueList>
+														<Value>40</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<EffectSlot Name="" ID="{73229607-26EF-4FCA-83A8-B91A17A10716}" ShortID="358396168">
+														<ReferenceList>
+															<Reference Name="Effect" CompanyID="4095" PluginID="65535" PluginType="15">
+																<ObjectRef Name="HamburgVolksdorferWald_Diffusion" ID="{73217A8E-9777-4DDE-AC50-101FACDD4F06}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</ObjectList>
+											</ObjectLists>
+										</AuxBus>
+										<AuxBus Name="Outside_Alley" ID="{B429B3D7-56A5-4CC3-B731-60A74A1A6E24}">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>3840</Value>
+													</ValueList>
+												</Property>
+												<Property Name="BusVolume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="EnableDiffraction" Type="bool" Value="False"/>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<EffectSlot Name="" ID="{A2B5006D-A668-491F-B1F2-C68115AF5268}" ShortID="370908256">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																<ObjectRef Name="Dirty_Washing_Machine" ID="{824764DD-7364-411D-AF50-DEDF8E3DCC48}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</ObjectList>
+											</ObjectLists>
+										</AuxBus>
+										<AuxBus Name="Dynamic_RoomVerbMedium" ID="{10BB14DF-C4CC-4DC2-93A8-56CEB3453EF0}">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>3840</Value>
+													</ValueList>
+												</Property>
+												<Property Name="BusVolume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="EnableDiffraction" Type="bool" Value="False"/>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+												<Property Name="OutputBusLowpass" Type="int16">
+													<ValueList>
+														<Value>20</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<EffectSlot Name="" ID="{634237C6-22B9-472F-919A-327FE8FD2870}" ShortID="400315368">
+														<ReferenceList>
+															<Reference Name="Effect">
+																<Custom>
+																	<Effect Name="Wwise RoomVerb (Custom)" ID="{C1995443-0138-4652-AEF1-46D12CC155CF}" ShortID="335121361" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																		<PropertyList>
+																			<Property Name="Density" Type="Real32" Value="100"/>
+																			<Property Name="DryLevel" Type="Real32" Value="-96.3"/>
+																			<Property Name="ERPattern" Type="int32" Value="30"/>
+																			<Property Name="EnableEarlyReflections" Type="bool" Value="False"/>
+																			<Property Name="EnableToneControls" Type="bool" Value="True"/>
+																			<Property Name="Filter1Curve" Type="int32" Value="2"/>
+																			<Property Name="Filter1Freq" Type="Real32" Value="9400"/>
+																			<Property Name="Filter1Gain" Type="Real32" Value="-24"/>
+																			<Property Name="Filter1InsertPos" Type="int32" Value="0"/>
+																			<Property Name="Filter2Freq" Type="Real32" Value="150"/>
+																			<Property Name="Filter2Gain" Type="Real32" Value="-24"/>
+																			<Property Name="Filter2InsertPos" Type="int32" Value="0"/>
+																			<Property Name="Filter3Freq" Type="Real32" Value="4000"/>
+																			<Property Name="Filter3Gain" Type="Real32" Value="-12"/>
+																			<Property Name="Filter3InsertPos" Type="int32" Value="2"/>
+																			<Property Name="Quality" Type="int32" Value="16"/>
+																			<Property Name="ReverbLevel" Type="Real32" Value="-12"/>
+																			<Property Name="RoomShape" Type="Real32" Value="10"/>
+																			<Property Name="RoomSize" Type="Real32" Value="10"/>
+																		</PropertyList>
+																		<ObjectLists>
+																			<ObjectList Name="RTPC">
+																				<RTPC Name="" ID="{F8389E57-4101-4F7E-9E9E-BD24D86C41A1}" ShortID="376158491">
+																					<PropertyList>
+																						<Property Name="PropertyName" Type="string" Value="DecayTime"/>
+																					</PropertyList>
+																					<ReferenceList>
+																						<Reference Name="ControlInput" CompanyID="4095" PluginID="65535" PluginType="15">
+																							<ObjectRef Name="Room_Decay" ID="{48C534F0-75A0-4C52-83FD-B2A8E1EC7EB8}" WorkUnitID="{6A3900CE-8D7F-48AF-B923-F1EACD4CAB52}"/>
+																						</Reference>
+																						<Reference Name="Curve">
+																							<Custom>
+																								<Curve Name="" ID="{B6AF8C7E-1F83-4CEA-A7B9-EFBA1589BE42}">
+																									<PropertyList>
+																										<Property Name="Flags" Type="int32" Value="1"/>
+																									</PropertyList>
+																									<PointList>
+																										<Point>
+																											<XPos>0</XPos>
+																											<YPos>0.2</YPos>
+																											<Flags>5</Flags>
+																										</Point>
+																										<Point>
+																											<XPos>0.2</XPos>
+																											<YPos>0.2</YPos>
+																											<Flags>0</Flags>
+																											<SegmentShape>Log3</SegmentShape>
+																										</Point>
+																										<Point>
+																											<XPos>10</XPos>
+																											<YPos>6.97943</YPos>
+																											<Flags>37</Flags>
+																										</Point>
+																									</PointList>
+																								</Curve>
+																							</Custom>
+																						</Reference>
+																					</ReferenceList>
+																				</RTPC>
+																				<RTPC Name="" ID="{404B9BA6-9C0C-4C7D-8A4F-167E75B12BBA}" ShortID="491369216">
+																					<PropertyList>
+																						<Property Name="PropertyName" Type="string" Value="HFDamping"/>
+																					</PropertyList>
+																					<ReferenceList>
+																						<Reference Name="ControlInput" CompanyID="4095" PluginID="65535" PluginType="15">
+																							<ObjectRef Name="Room_HFDamping" ID="{9A5FDFAE-4E2F-49E3-A364-1B8E8442AA2D}" WorkUnitID="{6A3900CE-8D7F-48AF-B923-F1EACD4CAB52}"/>
+																						</Reference>
+																						<Reference Name="Curve">
+																							<Custom>
+																								<Curve Name="" ID="{0F44E394-ACA8-4248-A219-7A0B9F1819B3}">
+																									<PropertyList>
+																										<Property Name="Flags" Type="int32" Value="1"/>
+																									</PropertyList>
+																									<PointList>
+																										<Point>
+																											<XPos>-1</XPos>
+																											<YPos>0.5</YPos>
+																											<Flags>5</Flags>
+																										</Point>
+																										<Point>
+																											<XPos>0</XPos>
+																											<YPos>1</YPos>
+																											<Flags>0</Flags>
+																										</Point>
+																										<Point>
+																											<XPos>1</XPos>
+																											<YPos>10</YPos>
+																											<Flags>37</Flags>
+																										</Point>
+																									</PointList>
+																								</Curve>
+																							</Custom>
+																						</Reference>
+																					</ReferenceList>
+																				</RTPC>
+																				<RTPC Name="" ID="{D66F8B74-4860-408C-B8CC-C1C3BD5FCB64}" ShortID="712624497">
+																					<PropertyList>
+																						<Property Name="PropertyName" Type="string" Value="PreDelay"/>
+																					</PropertyList>
+																					<ReferenceList>
+																						<Reference Name="ControlInput" CompanyID="4095" PluginID="65535" PluginType="15">
+																							<ObjectRef Name="Room_Predelay" ID="{9DD33D43-CB83-415F-B659-09E737D36A04}" WorkUnitID="{6A3900CE-8D7F-48AF-B923-F1EACD4CAB52}"/>
+																						</Reference>
+																						<Reference Name="Curve">
+																							<Custom>
+																								<Curve Name="" ID="{0622CF27-8B8B-4C15-967F-70BD2DE0C876}">
+																									<PropertyList>
+																										<Property Name="Flags" Type="int32" Value="1"/>
+																									</PropertyList>
+																									<PointList>
+																										<Point>
+																											<XPos>0</XPos>
+																											<YPos>0</YPos>
+																											<Flags>5</Flags>
+																										</Point>
+																										<Point>
+																											<XPos>1000</XPos>
+																											<YPos>1000</YPos>
+																											<Flags>37</Flags>
+																										</Point>
+																									</PointList>
+																								</Curve>
+																							</Custom>
+																						</Reference>
+																					</ReferenceList>
+																				</RTPC>
+																				<RTPC Name="" ID="{302A821C-1BE0-4BB4-8A58-B12AAA2D97DE}" ShortID="747403375">
+																					<PropertyList>
+																						<Property Name="PropertyName" Type="string" Value="ReverbLevel"/>
+																					</PropertyList>
+																					<ReferenceList>
+																						<Reference Name="ControlInput" CompanyID="4095" PluginID="65535" PluginType="15">
+																							<ObjectRef Name="LateReverb" ID="{6B25E302-5ECF-445A-91A4-C9D80D0EA4FF}" WorkUnitID="{C9D11938-1035-430D-BD4F-C5B7B7C00CB2}"/>
+																						</Reference>
+																						<Reference Name="Curve">
+																							<Custom>
+																								<Curve Name="" ID="{530A728D-4E59-48D1-A03C-B69A3A79A147}">
+																									<PropertyList>
+																										<Property Name="Flags" Type="int32" Value="3"/>
+																									</PropertyList>
+																									<PointList>
+																										<Point>
+																											<XPos>0</XPos>
+																											<YPos>-96.3000030517578</YPos>
+																											<Flags>5</Flags>
+																										</Point>
+																										<Point>
+																											<XPos>1</XPos>
+																											<YPos>0</YPos>
+																											<Flags>37</Flags>
+																										</Point>
+																									</PointList>
+																								</Curve>
+																							</Custom>
+																						</Reference>
+																					</ReferenceList>
+																				</RTPC>
+																			</ObjectList>
+																		</ObjectLists>
+																	</Effect>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</ObjectList>
+											</ObjectLists>
+										</AuxBus>
+										<AuxBus Name="Dynamic_RoomVerbLarge" ID="{8BEADEC6-8904-4575-9617-51C754EEDF86}">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>3840</Value>
+													</ValueList>
+												</Property>
+												<Property Name="BusVolume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="EnableDiffraction" Type="bool" Value="False"/>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+												<Property Name="OutputBusLowpass" Type="int16">
+													<ValueList>
+														<Value>20</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<EffectSlot Name="" ID="{B3A516BF-9088-4084-A924-95EE0837D712}" ShortID="118327019">
+														<ReferenceList>
+															<Reference Name="Effect">
+																<Custom>
+																	<Effect Name="Wwise RoomVerb (Custom)" ID="{8407630F-9E74-4E4A-886A-C95C0C17E0EB}" ShortID="708807284" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																		<PropertyList>
+																			<Property Name="Density" Type="Real32" Value="100"/>
+																			<Property Name="DryLevel" Type="Real32" Value="-96.3"/>
+																			<Property Name="ERFrontBackDelay" Type="Real32" Value="23"/>
+																			<Property Name="ERPattern" Type="int32" Value="9"/>
+																			<Property Name="EnableEarlyReflections" Type="bool" Value="False"/>
+																			<Property Name="EnableToneControls" Type="bool" Value="True"/>
+																			<Property Name="Filter1Curve" Type="int32" Value="1"/>
+																			<Property Name="Filter1Freq" Type="Real32" Value="70"/>
+																			<Property Name="Filter1Gain" Type="Real32" Value="5"/>
+																			<Property Name="Filter1InsertPos" Type="int32" Value="1"/>
+																			<Property Name="Filter1Q" Type="Real32" Value="0.1"/>
+																			<Property Name="Filter2Curve" Type="int32" Value="0"/>
+																			<Property Name="Filter2Freq" Type="Real32" Value="200"/>
+																			<Property Name="Filter2Gain" Type="Real32" Value="-6.5"/>
+																			<Property Name="Filter2InsertPos" Type="int32" Value="2"/>
+																			<Property Name="Filter3Freq" Type="Real32" Value="3000"/>
+																			<Property Name="Filter3Gain" Type="Real32" Value="-12"/>
+																			<Property Name="Quality" Type="int32" Value="16"/>
+																			<Property Name="ReverbLevel" Type="Real32" Value="-12"/>
+																			<Property Name="RoomShape" Type="Real32" Value="6"/>
+																			<Property Name="RoomSize" Type="Real32" Value="-100"/>
+																		</PropertyList>
+																		<ObjectLists>
+																			<ObjectList Name="RTPC">
+																				<RTPC Name="" ID="{2B6B91A2-EC04-40F6-8A14-7A34A4EDECA8}" ShortID="783817223">
+																					<PropertyList>
+																						<Property Name="PropertyName" Type="string" Value="DecayTime"/>
+																					</PropertyList>
+																					<ReferenceList>
+																						<Reference Name="ControlInput" CompanyID="4095" PluginID="65535" PluginType="15">
+																							<ObjectRef Name="Room_Decay" ID="{48C534F0-75A0-4C52-83FD-B2A8E1EC7EB8}" WorkUnitID="{6A3900CE-8D7F-48AF-B923-F1EACD4CAB52}"/>
+																						</Reference>
+																						<Reference Name="Curve">
+																							<Custom>
+																								<Curve Name="" ID="{99E9E513-E1B4-4BFB-9535-6DF756C67E2D}">
+																									<PropertyList>
+																										<Property Name="Flags" Type="int32" Value="1"/>
+																									</PropertyList>
+																									<PointList>
+																										<Point>
+																											<XPos>0</XPos>
+																											<YPos>0.2</YPos>
+																											<Flags>5</Flags>
+																										</Point>
+																										<Point>
+																											<XPos>0.2</XPos>
+																											<YPos>0.2</YPos>
+																											<Flags>0</Flags>
+																											<SegmentShape>Log3</SegmentShape>
+																										</Point>
+																										<Point>
+																											<XPos>10</XPos>
+																											<YPos>8.97992</YPos>
+																											<Flags>37</Flags>
+																										</Point>
+																									</PointList>
+																								</Curve>
+																							</Custom>
+																						</Reference>
+																					</ReferenceList>
+																				</RTPC>
+																				<RTPC Name="" ID="{AA99C1D4-9F06-4F78-BC5D-CD3D510F264D}" ShortID="238189419">
+																					<PropertyList>
+																						<Property Name="PropertyName" Type="string" Value="HFDamping"/>
+																					</PropertyList>
+																					<ReferenceList>
+																						<Reference Name="ControlInput" CompanyID="4095" PluginID="65535" PluginType="15">
+																							<ObjectRef Name="Room_HFDamping" ID="{9A5FDFAE-4E2F-49E3-A364-1B8E8442AA2D}" WorkUnitID="{6A3900CE-8D7F-48AF-B923-F1EACD4CAB52}"/>
+																						</Reference>
+																						<Reference Name="Curve">
+																							<Custom>
+																								<Curve Name="" ID="{14826AFF-5ECD-4C6D-94BB-EBD461FBBFC1}">
+																									<PropertyList>
+																										<Property Name="Flags" Type="int32" Value="1"/>
+																									</PropertyList>
+																									<PointList>
+																										<Point>
+																											<XPos>-1</XPos>
+																											<YPos>0.5</YPos>
+																											<Flags>5</Flags>
+																										</Point>
+																										<Point>
+																											<XPos>0</XPos>
+																											<YPos>1</YPos>
+																											<Flags>0</Flags>
+																										</Point>
+																										<Point>
+																											<XPos>1</XPos>
+																											<YPos>10</YPos>
+																											<Flags>37</Flags>
+																										</Point>
+																									</PointList>
+																								</Curve>
+																							</Custom>
+																						</Reference>
+																					</ReferenceList>
+																				</RTPC>
+																				<RTPC Name="" ID="{CAECA8E8-164C-4481-B9BA-EF8FDDBDF7C9}" ShortID="289596029">
+																					<PropertyList>
+																						<Property Name="PropertyName" Type="string" Value="PreDelay"/>
+																					</PropertyList>
+																					<ReferenceList>
+																						<Reference Name="ControlInput" CompanyID="4095" PluginID="65535" PluginType="15">
+																							<ObjectRef Name="Room_Predelay" ID="{9DD33D43-CB83-415F-B659-09E737D36A04}" WorkUnitID="{6A3900CE-8D7F-48AF-B923-F1EACD4CAB52}"/>
+																						</Reference>
+																						<Reference Name="Curve">
+																							<Custom>
+																								<Curve Name="" ID="{A7EFA2B9-626E-4B9E-A2CA-E9959EC5B3AB}">
+																									<PropertyList>
+																										<Property Name="Flags" Type="int32" Value="1"/>
+																									</PropertyList>
+																									<PointList>
+																										<Point>
+																											<XPos>0</XPos>
+																											<YPos>0</YPos>
+																											<Flags>5</Flags>
+																										</Point>
+																										<Point>
+																											<XPos>1000</XPos>
+																											<YPos>724.90706</YPos>
+																											<Flags>37</Flags>
+																										</Point>
+																									</PointList>
+																								</Curve>
+																							</Custom>
+																						</Reference>
+																					</ReferenceList>
+																				</RTPC>
+																				<RTPC Name="" ID="{FD1B94A7-1DA7-4C8C-AD25-AA810B680F97}" ShortID="637167660">
+																					<PropertyList>
+																						<Property Name="PropertyName" Type="string" Value="ReverbLevel"/>
+																					</PropertyList>
+																					<ReferenceList>
+																						<Reference Name="ControlInput" CompanyID="4095" PluginID="65535" PluginType="15">
+																							<ObjectRef Name="LateReverb" ID="{6B25E302-5ECF-445A-91A4-C9D80D0EA4FF}" WorkUnitID="{C9D11938-1035-430D-BD4F-C5B7B7C00CB2}"/>
+																						</Reference>
+																						<Reference Name="Curve">
+																							<Custom>
+																								<Curve Name="" ID="{723C94F9-234F-4189-B4D2-BAA71D47507F}">
+																									<PropertyList>
+																										<Property Name="Flags" Type="int32" Value="3"/>
+																									</PropertyList>
+																									<PointList>
+																										<Point>
+																											<XPos>0</XPos>
+																											<YPos>-96.3000030517578</YPos>
+																											<Flags>5</Flags>
+																										</Point>
+																										<Point>
+																											<XPos>1</XPos>
+																											<YPos>-0.81172</YPos>
+																											<Flags>37</Flags>
+																										</Point>
+																									</PointList>
+																								</Curve>
+																							</Custom>
+																						</Reference>
+																					</ReferenceList>
+																				</RTPC>
+																			</ObjectList>
+																		</ObjectLists>
+																	</Effect>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</ObjectList>
+											</ObjectLists>
+										</AuxBus>
+										<AuxBus Name="TrainStation_NoRoof" ID="{DE5AFFC5-0EF8-402F-966F-7DC5029BFD67}">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>516</Value>
+													</ValueList>
+												</Property>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<EffectSlot Name="" ID="{02FA9BF1-3DAF-4B79-8A2C-22C48741C9D9}" ShortID="33550861">
+														<ReferenceList>
+															<Reference Name="Effect">
+																<Custom>
+																	<Effect Name="Wwise RoomVerb (Custom)" ID="{44D4FEAD-9941-4BBA-A517-44B39FB92849}" ShortID="556389606" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																		<PropertyList>
+																			<Property Name="DecayTime" Type="Real32" Value="2"/>
+																			<Property Name="Density" Type="Real32" Value="29"/>
+																			<Property Name="Diffusion" Type="Real32" Value="50"/>
+																			<Property Name="DryLevel" Type="Real32" Value="-96.3"/>
+																			<Property Name="ERLevel" Type="Real32" Value="-12"/>
+																			<Property Name="ERPattern" Type="int32" Value="19"/>
+																			<Property Name="EnableToneControls" Type="bool" Value="True"/>
+																			<Property Name="Filter1Freq" Type="Real32" Value="7260"/>
+																			<Property Name="Filter1Gain" Type="Real32" Value="-6.5"/>
+																			<Property Name="Filter1Q" Type="Real32" Value="0.1"/>
+																			<Property Name="Filter2Freq" Type="Real32" Value="150"/>
+																			<Property Name="Filter2Gain" Type="Real32" Value="-24"/>
+																			<Property Name="Filter2InsertPos" Type="int32" Value="0"/>
+																			<Property Name="Filter3Freq" Type="Real32" Value="2000"/>
+																			<Property Name="Filter3Gain" Type="Real32" Value="-12"/>
+																			<Property Name="HFDamping" Type="Real32" Value="10"/>
+																			<Property Name="PreDelay" Type="Real32" Value="0"/>
+																			<Property Name="Quality" Type="int32" Value="16"/>
+																			<Property Name="ReverbLevel" Type="Real32" Value="-12"/>
+																			<Property Name="RoomShape" Type="Real32" Value="1"/>
+																			<Property Name="RoomSize" Type="Real32" Value="100"/>
+																		</PropertyList>
+																		<ObjectLists>
+																			<ObjectList Name="RTPC">
+																				<RTPC Name="" ID="{76A2F2A7-6418-458D-9439-2EB669DE72F4}" ShortID="723728759">
+																					<PropertyList>
+																						<Property Name="PropertyName" Type="string" Value="ReverbLevel"/>
+																					</PropertyList>
+																					<ReferenceList>
+																						<Reference Name="ControlInput" CompanyID="4095" PluginID="65535" PluginType="15">
+																							<ObjectRef Name="LateReverb" ID="{6B25E302-5ECF-445A-91A4-C9D80D0EA4FF}" WorkUnitID="{C9D11938-1035-430D-BD4F-C5B7B7C00CB2}"/>
+																						</Reference>
+																						<Reference Name="Curve">
+																							<Custom>
+																								<Curve Name="" ID="{5043FA62-192F-4C8F-8081-CCF271A16A01}">
+																									<PropertyList>
+																										<Property Name="Flags" Type="int32" Value="3"/>
+																									</PropertyList>
+																									<PointList>
+																										<Point>
+																											<XPos>0</XPos>
+																											<YPos>-96.3000030517578</YPos>
+																											<Flags>5</Flags>
+																										</Point>
+																										<Point>
+																											<XPos>1</XPos>
+																											<YPos>0</YPos>
+																											<Flags>37</Flags>
+																										</Point>
+																									</PointList>
+																								</Curve>
+																							</Custom>
+																						</Reference>
+																					</ReferenceList>
+																				</RTPC>
+																			</ObjectList>
+																		</ObjectLists>
+																	</Effect>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</ObjectList>
+											</ObjectLists>
+										</AuxBus>
+									</ChildrenList>
+								</Bus>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="UI_PassthroughMix" ID="{09460882-043D-49A9-B8FC-E267A66B128E}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>3840</Value>
+									</ValueList>
+								</Property>
+								<Property Name="CenterPercentage" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+						</Bus>
+						<Bus Name="Backgrounds_MainMix" ID="{ECFB6D01-E6C8-4775-8F5E-0605C23A1245}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>3584</Value>
+									</ValueList>
+								</Property>
+								<Property Name="CenterPercentage" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ChildrenList>
+								<Bus Name="Rooms" ID="{2C0FA665-EED0-4E98-8C18-9F94DFA920F5}">
+									<PropertyList>
+										<Property Name="CenterPercentage" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ChildrenList>
+										<Bus Name="Quad" ID="{01524938-365F-49CE-948F-893D4174A60F}">
+											<PropertyList>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>6304004</Value>
+													</ValueList>
+												</Property>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+										</Bus>
+										<Bus Name="Ambisonics" ID="{D04F68B7-42E5-442E-A698-69C055BF6217}">
+											<PropertyList>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>516</Value>
+													</ValueList>
+												</Property>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+										</Bus>
+									</ChildrenList>
+								</Bus>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="Positional_AudioObjects" ID="{2D865080-EAA7-4B18-B490-4E6A5A5A3875}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>768</Value>
+									</ValueList>
+								</Property>
+								<Property Name="CenterPercentage" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ChildrenList>
+								<Bus Name="MainCharacter" ID="{81222C71-E408-48AD-8C1B-D92CB1D51523}">
+									<PropertyList>
+										<Property Name="CenterPercentage" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<EffectSlot Name="" ID="{60B2EBC0-28D1-427A-A9F6-0E8556847B0A}" ShortID="547208806">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="3D Audio Bed Mixer (Custom)" ID="{FC350CAE-922C-4F6A-9E67-A150856ECE53}" ShortID="383015312" PluginName="Wwise 3D Audio Bed Mixer" CompanyID="0" PluginID="190" PluginType="3">
+																<PropertyList>
+																	<Property Name="SystemAudioObjectLimit" Type="Uint16">
+																		<ValueList>
+																			<Value>10</Value>
+																		</ValueList>
+																	</Property>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</ObjectList>
+									</ObjectLists>
+								</Bus>
+								<Bus Name="Objects" ID="{6B1D71F8-9179-4F95-96F4-06E5676EA964}">
+									<PropertyList>
+										<Property Name="CenterPercentage" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<EffectSlot Name="" ID="{27ED986D-FBEB-41B9-90FD-832375DB5EA8}" ShortID="755233113">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="3D Audio Bed Mixer (Custom)" ID="{1AE7C7D2-9D6A-45EC-82B5-B516B2638AE5}" ShortID="17001753" PluginName="Wwise 3D Audio Bed Mixer" CompanyID="0" PluginID="190" PluginType="3">
+																<PropertyList>
+																	<Property Name="SystemAudioObjectLimit" Type="Uint16">
+																		<ValueList>
+																			<Value>10</Value>
+																		</ValueList>
+																	</Property>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</ObjectList>
+									</ObjectLists>
+								</Bus>
+								<Bus Name="Ambience" ID="{EAA8C518-F12C-48C5-BF6F-49FC9433F713}">
+									<PropertyList>
+										<Property Name="CenterPercentage" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+										<Property Name="EnableDiffraction" Type="bool" Value="False"/>
+									</PropertyList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<EffectSlot Name="" ID="{917C2AFE-5884-4A4A-9C92-9015A03101F0}" ShortID="929621329">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="3D Audio Bed Mixer (Custom)" ID="{C7C01AE8-C65D-40CD-B3BA-ACA11F50B5CE}" ShortID="298148811" PluginName="Wwise 3D Audio Bed Mixer" CompanyID="0" PluginID="190" PluginType="3">
+																<PropertyList>
+																	<Property Name="SystemAudioObjectLimit" Type="Uint16">
+																		<ValueList>
+																			<Value>10</Value>
+																		</ValueList>
+																	</Property>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</ObjectList>
+									</ObjectLists>
+								</Bus>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="Test" ID="{91BFC612-9C4C-42FE-A8E8-23A484E56EC8}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>761524492</Value>
+									</ValueList>
+								</Property>
+								<Property Name="CenterPercentage" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
+								<Property Name="EnableDiffraction" Type="bool" Value="False"/>
+							</PropertyList>
+						</Bus>
+					</ChildrenList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

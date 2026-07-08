@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{EF1E5E7E-07E4-4225-9BB1-A31BEFCF1137}" SchemaVersion="133">
+	<Effects>
+		<WorkUnit Name="Wwise Reflect_WAL" ID="{EF1E5E7E-07E4-4225-9BB1-A31BEFCF1137}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="Reflect_FirstPerson" ID="{46253F03-D5C3-43A8-8B8B-C4323ED05719}" PluginName="Wwise Reflect" CompanyID="0" PluginID="171" PluginType="3">
+					<PropertyList>
+						<Property Name="CenterPerc" Type="Real32" Value="100"/>
+						<Property Name="DecorrStrength" Type="Real32" Value="60"/>
+						<Property Name="Dry" Type="Real32" Value="-96"/>
+						<Property Name="FusingTime" Type="Real32" Value="10"/>
+						<Property Name="MaxDistance" Type="Real32" Value="6000"/>
+						<Property Name="OutputChannelConfig" Type="int32" Value="516"/>
+						<Property Name="SpeedOfSound" Type="Real32" Value="20000"/>
+						<Property Name="StereoDecorrelation" Type="bool" Value="True"/>
+					</PropertyList>
+					<PluginData>
+	<ReflectData>
+		<CurveList Version="4">
+			<CurveInfo Name="Diffraction Attenuation">
+				<Curve Name="Diffraction Attenuation">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="3"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+							<SegmentShape>Log1</SegmentShape>
+						</Point>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>-3</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>100</XPos>
+							<YPos>-6</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="Diffraction DSF">
+				<Curve Name="Diffraction DSF">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="3"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>100</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="Diffraction HPF">
+				<Curve Name="Diffraction HPF">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>100</XPos>
+							<YPos>20</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="Diffraction LPF">
+				<Curve Name="Diffraction LPF">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+							<SegmentShape>Log2</SegmentShape>
+						</Point>
+						<Point>
+							<XPos>100</XPos>
+							<YPos>146.85137</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="Distance Attenuation (Image Source vs. Listener)">
+				<Curve Name="Distance Attenuation (Image Source vs. Listener)">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="3"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>30</XPos>
+							<YPos>-6</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>60</XPos>
+							<YPos>-12</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>120</XPos>
+							<YPos>-18</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>240</XPos>
+							<YPos>-24</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>480</XPos>
+							<YPos>-24</YPos>
+							<Flags>0</Flags>
+							<SegmentShape>Log3</SegmentShape>
+						</Point>
+						<Point>
+							<XPos>6000</XPos>
+							<YPos>-200</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="Distance DSF">
+				<Curve Name="Distance DSF">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="3"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>6000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="Distance High-pass Filter (Image Source vs. Listener)">
+				<Curve Name="Distance High-pass Filter (Image Source vs. Listener)">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>0.06</XPos>
+							<YPos>20</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>0.12</XPos>
+							<YPos>20</YPos>
+							<Flags>0</Flags>
+							<SegmentShape>Log1</SegmentShape>
+						</Point>
+						<Point>
+							<XPos>0.121</XPos>
+							<YPos>20</YPos>
+							<Flags>0</Flags>
+							<SegmentShape>Exp1</SegmentShape>
+						</Point>
+						<Point>
+							<XPos>500</XPos>
+							<YPos>4336.23463</YPos>
+							<Flags>0</Flags>
+							<SegmentShape>Log1</SegmentShape>
+						</Point>
+						<Point>
+							<XPos>6000</XPos>
+							<YPos>7000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="Distance Low-pass Filter (Image Source vs. Listener)">
+				<Curve Name="Distance Low-pass Filter (Image Source vs. Listener)">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+							<SegmentShape>Log3</SegmentShape>
+						</Point>
+						<Point>
+							<XPos>6000</XPos>
+							<YPos>136.77996</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="Distance Spread (Image Source vs. Listener)">
+				<Curve Name="Distance Spread (Image Source vs. Listener)">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>28.754</YPos>
+							<Flags>5</Flags>
+							<SegmentShape>Log2</SegmentShape>
+						</Point>
+						<Point>
+							<XPos>6</XPos>
+							<YPos>0</YPos>
+							<Flags>0</Flags>
+							<SegmentShape>Exp2</SegmentShape>
+						</Point>
+						<Point>
+							<XPos>6000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ReflectData>
+</PluginData>
+				</Effect>
+				<Effect Name="Reflect_ThirdPerson" ID="{71F20BEC-5564-47C4-BD88-FB04D44F074B}" PluginName="Wwise Reflect" CompanyID="0" PluginID="171" PluginType="3">
+					<PropertyList>
+						<Property Name="CenterPerc" Type="Real32" Value="100"/>
+						<Property Name="DecorrStrength" Type="Real32" Value="33"/>
+						<Property Name="Dry" Type="Real32" Value="-96"/>
+						<Property Name="FusingTime" Type="Real32" Value="10"/>
+						<Property Name="MaxDistance" Type="Real32" Value="9600"/>
+						<Property Name="OutputChannelConfig" Type="int32" Value="516"/>
+						<Property Name="ParamFilterCutoff" Type="Real32" Value="1"/>
+						<Property Name="PitchThreshold" Type="Real32" Value="100"/>
+						<Property Name="SpeedOfSound" Type="Real32" Value="20000"/>
+					</PropertyList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<RTPC Name="" ID="{FD9095BD-FCFE-4E18-9C31-B7948606CBA2}" ShortID="832262244">
+								<PropertyList>
+									<Property Name="PropertyName" Type="string" Value="Wet"/>
+								</PropertyList>
+								<ReferenceList>
+									<Reference Name="ControlInput" CompanyID="4095" PluginID="65535" PluginType="15">
+										<ObjectRef Name="AstrolabeSize" ID="{C0570A08-74D9-4389-8617-63A911EF0850}" WorkUnitID="{6A3900CE-8D7F-48AF-B923-F1EACD4CAB52}"/>
+									</Reference>
+									<Reference Name="Curve">
+										<Custom>
+											<Curve Name="" ID="{9DFB6FC3-41BF-40FC-9B1D-25623A9DDFD6}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="1"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>5000</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</Custom>
+									</Reference>
+								</ReferenceList>
+							</RTPC>
+						</ObjectList>
+					</ObjectLists>
+					<PluginData>
+	<ReflectData>
+		<CurveList Version="4">
+			<CurveInfo Name="Diffraction Attenuation">
+				<Curve Name="Diffraction Attenuation">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="3"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+							<SegmentShape>Log1</SegmentShape>
+						</Point>
+						<Point>
+							<XPos>9.56429</XPos>
+							<YPos>-23.84522</YPos>
+							<Flags>0</Flags>
+							<SegmentShape>Exp1</SegmentShape>
+						</Point>
+						<Point>
+							<XPos>100</XPos>
+							<YPos>-200</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="Diffraction DSF">
+				<Curve Name="Diffraction DSF">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="3"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>100</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="Diffraction HPF">
+				<Curve Name="Diffraction HPF">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20</YPos>
+							<Flags>5</Flags>
+							<SegmentShape>Log1</SegmentShape>
+						</Point>
+						<Point>
+							<XPos>100</XPos>
+							<YPos>29.58297</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="Diffraction LPF">
+				<Curve Name="Diffraction LPF">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+							<SegmentShape>Log1</SegmentShape>
+						</Point>
+						<Point>
+							<XPos>100</XPos>
+							<YPos>20</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="Distance Attenuation (Image Source vs. Listener)">
+				<Curve Name="Distance Attenuation (Image Source vs. Listener)">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="3"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>375.00032</XPos>
+							<YPos>0</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>1374.99954</XPos>
+							<YPos>-6.90944</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>3375.00047</XPos>
+							<YPos>-12</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>9600</XPos>
+							<YPos>-200</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="Distance DSF">
+				<Curve Name="Distance DSF">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="3"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>9600</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="Distance High-pass Filter (Image Source vs. Listener)">
+				<Curve Name="Distance High-pass Filter (Image Source vs. Listener)">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>0.002</XPos>
+							<YPos>20</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>0.004</XPos>
+							<YPos>20</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>9600</XPos>
+							<YPos>20</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="Distance Low-pass Filter (Image Source vs. Listener)">
+				<Curve Name="Distance Low-pass Filter (Image Source vs. Listener)">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>9600</XPos>
+							<YPos>1239.84874</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="Distance Spread (Image Source vs. Listener)">
+				<Curve Name="Distance Spread (Image Source vs. Listener)">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>5.04854</YPos>
+							<Flags>5</Flags>
+							<SegmentShape>Log3</SegmentShape>
+						</Point>
+						<Point>
+							<XPos>500</XPos>
+							<YPos>0</YPos>
+							<Flags>0</Flags>
+							<SegmentShape>Exp3</SegmentShape>
+						</Point>
+						<Point>
+							<XPos>9600</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ReflectData>
+</PluginData>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
+	</Effects>
+</WwiseDocument>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{261B6383-DA98-4867-A00C-8FAA0267D91F}" SchemaVersion="133">
+	<Events>
+		<WorkUnit Name="UI" ID="{261B6383-DA98-4867-A00C-8FAA0267D91F}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="AB_Comparison" ID="{118DE2D0-7C3D-4048-ADAF-48DD40486210}" ShortID="835104908">
+					<ChildrenList>
+						<Folder Name="AmbVsQuad" ID="{C5DE18B6-9BD7-4EE5-81CA-876BCC03F84B}" ShortID="245654839">
+							<ChildrenList>
+								<Event Name="SetQuad" ID="{02132B18-DB46-4BA7-AFBC-4D754B03FE63}">
+									<Comment>Triggered when player selects "Quad" from game menus.</Comment>
+									<ChildrenList>
+										<Action Name="" ID="{E800BA04-AD53-43BA-9560-A4B756A77D0A}" ShortID="713381272">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="38"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="AmbisonicsQuad" ID="{C397C7B6-0F1F-4E1C-9AC7-AAB57FE699C2}" WorkUnitID="{6A3900CE-8D7F-48AF-B923-F1EACD4CAB52}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="SetAmbisonics" ID="{D636B89F-C909-4DEB-9135-2F36BFD93B8B}">
+									<Comment>Triggered when player selects "Ambisonics" from game menus.</Comment>
+									<ChildrenList>
+										<Action Name="" ID="{4CEAEE42-B20B-4B43-8E9C-7C9C9092C161}" ShortID="561346339">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="38"/>
+												<Property Name="GameParameterValue" Type="Real64" Value="100"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="AmbisonicsQuad" ID="{C397C7B6-0F1F-4E1C-9AC7-AAB57FE699C2}" WorkUnitID="{6A3900CE-8D7F-48AF-B923-F1EACD4CAB52}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Menu_Sounds" ID="{D0C03683-D1F2-4675-9C2B-A7000C4FA3B2}" ShortID="249575503">
+					<ChildrenList>
+						<Event Name="Menu_Confirm" ID="{A196071C-8B1E-4CEC-B5E3-6DD7A7B2B76F}">
+							<ChildrenList>
+								<Action Name="" ID="{80199843-C181-407D-8163-36F7267112C9}" ShortID="882083508">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="UI Menu Confirm" ID="{2973E452-6E0D-405C-A4A9-035314B389CD}" WorkUnitID="{65128A0E-F2E4-4A3B-BBCF-C714289422D0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Menu_Close" ID="{48D612DD-F525-440F-B753-F2344183EE0B}">
+							<ChildrenList>
+								<Action Name="" ID="{5F0D1C3D-0C00-4405-AE1A-58C09432BDF1}" ShortID="680798208">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="UI Menu Close" ID="{B159CB6D-B135-4ED4-865F-34B5B9E410E3}" WorkUnitID="{65128A0E-F2E4-4A3B-BBCF-C714289422D0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Menu_Open" ID="{8DCB2829-581E-42D4-BF38-516EB127C7C9}">
+							<ChildrenList>
+								<Action Name="" ID="{8B30C5C7-3CC0-483E-83A1-9F02C4EC5BD2}" ShortID="158686401">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="UI Menu Open" ID="{88FDB5F0-FE19-48FA-BF30-5338747CDBB8}" WorkUnitID="{65128A0E-F2E4-4A3B-BBCF-C714289422D0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Menu_Navigate" ID="{A65937FF-7786-49C7-BC86-AAA6D0712657}">
+							<ChildrenList>
+								<Action Name="" ID="{3078F560-BEFC-4DA0-AA9E-AF7CDDACB093}" ShortID="488631008">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="UI Navigate" ID="{F2FEDC2C-9EC2-4DE6-A0FB-BD66DECC371E}" WorkUnitID="{65128A0E-F2E4-4A3B-BBCF-C714289422D0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

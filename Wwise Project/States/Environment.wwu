@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{966D17D7-BF5E-4427-A1AF-984D39B23607}" SchemaVersion="133">
+	<States>
+		<WorkUnit Name="Environment" ID="{966D17D7-BF5E-4427-A1AF-984D39B23607}" PersistMode="Standalone">
+			<Comment>A</Comment>
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="2"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<StateGroup Name="Ocean_Occlusion" ID="{01C51931-B073-4EE2-9F33-F133B000AB3C}">
+					<ChildrenList>
+						<State Name="None" ID="{CB2739CA-4D1F-4E7B-A42D-13E6AE562E62}"/>
+						<State Name="Occluded" ID="{F0B3FCC2-C5A9-405F-84CE-568905C9AF53}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

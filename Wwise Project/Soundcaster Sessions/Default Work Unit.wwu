@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{20BCA61A-D154-449D-8207-EF9EF5D8D0FD}" SchemaVersion="133">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{20BCA61A-D154-449D-8207-EF9EF5D8D0FD}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Test" ID="{15C6B6E2-94AB-4CEC-928D-7E3B1E4FA969}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="FirstPerson" ID="{3595F519-5F5B-4401-AD56-BEED0D5AC609}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ThirdPerson" ID="{6758FB9E-76D6-42DE-A2B0-EE031329989B}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Radio" ID="{6DB5B518-94D0-4E9E-9937-6AC7FDFB670D}" WorkUnitID="{5D930F2C-27AA-4E44-983C-77E0029717BE}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Weapon Fire SW" ID="{58E6852A-7680-4EA9-812A-C7A3CA2EFE7C}" WorkUnitID="{491F35F7-D8A2-4804-8237-56DBB97164F3}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Mezzanine2" ID="{49C5427B-30AD-40AC-8054-4FC1E0B69A06}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+					</ModuleList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

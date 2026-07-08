@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5D930F2C-27AA-4E44-983C-77E0029717BE}" SchemaVersion="133">
+	<Containers>
+		<WorkUnit Name="Objects" ID="{5D930F2C-27AA-4E44-983C-77E0029717BE}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="13"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<PropertyContainer Name="Radio" ID="{6DB5B518-94D0-4E9E-9937-6AC7FDFB670D}" ShortID="908237960">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{436D5620-5049-4CAB-ACA3-45DB22D63212}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="ReflectionsVolume" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="ATT_Radio Moving" ID="{F1E963D9-EF63-4270-B7D8-AC8F7ABE9881}" WorkUnitID="{44D59D0E-B34E-47D8-BCAD-9D79E4A94D67}"/>
+						</Reference>
+						<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+							<ObjectRef Name="Radio" ID="{5039A60D-9ED9-43E1-8C22-C147CB8574E5}" WorkUnitID="{FB674831-9DB3-43DB-88C8-0EE9E9BF65A4}"/>
+						</Reference>
+						<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+							<ObjectRef Name="Objects" ID="{6B1D71F8-9179-4F95-96F4-06E5676EA964}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+						</Reference>
+						<Reference Name="ReflectionsAuxSend">
+							<ObjectRef Name="ThirdPerson" ID="{6758FB9E-76D6-42DE-A2B0-EE031329989B}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SwitchContainer Name="Radio Program SW" ID="{55D31D0B-A233-4E75-AA1A-A1BD0E983C16}" ShortID="860148073">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Color" Type="int16" Value="11"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="ATT_Radio Moving" ID="{F1E963D9-EF63-4270-B7D8-AC8F7ABE9881}" WorkUnitID="{44D59D0E-B34E-47D8-BCAD-9D79E4A94D67}"/>
+								</Reference>
+								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Talk" ID="{DCBB10D8-EA4F-45F4-9701-459A45C079A6}" WorkUnitID="{8BA09415-25F1-484E-AA25-58E4CD40B38A}"/>
+								</Reference>
+								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="MainCharacter" ID="{81222C71-E408-48AD-8C1B-D92CB1D51523}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Radio_Program" ID="{A7ED41C7-5288-4B78-95E0-337BC7EEB555}" WorkUnitID="{8BA09415-25F1-484E-AA25-58E4CD40B38A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Music" ID="{FA24F032-FAE3-4F51-A3A1-FD22E0935D96}" ShortID="184275396">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+										</Reference>
+										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Stealth_MIX_Markers" ID="{FF67DA8B-530B-455D-A867-1DCFB459CE37}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Stealth_MIX_Markers.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1002884147"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Stealth_MIX_Markers" ID="{FF67DA8B-530B-455D-A867-1DCFB459CE37}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="White Noise" ID="{CDE97B2D-5A01-4445-A787-015801489E9C}" ShortID="147497577">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+										</Reference>
+										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Wwise Tone Generator" ID="{6AC7FB32-65C0-47F6-AE5C-AE677EF0A829}" ShortID="842878977" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+											<PropertyList>
+												<Property Name="WaveType" Type="int32" Value="4"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wwise Tone Generator" ID="{6AC7FB32-65C0-47F6-AE5C-AE677EF0A829}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Talk" ID="{EA5D70D2-A9C4-43E3-B7DD-5F444FEF846D}" ShortID="161918770">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="ATT_Radio Moving" ID="{F1E963D9-EF63-4270-B7D8-AC8F7ABE9881}" WorkUnitID="{44D59D0E-B34E-47D8-BCAD-9D79E4A94D67}"/>
+										</Reference>
+										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+										</Reference>
+										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Discussion" ID="{B81F41F1-0C94-494E-B915-EFF645390D47}">
+											<Language>SFX</Language>
+											<AudioFile>Discussion.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="526043302"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<EffectSlot Name="" ID="{E8976D55-B9B1-43DD-BF44-895C36071AEE}" ShortID="76194435">
+												<PropertyList>
+													<Property Name="Render" Type="bool" Value="True"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="Parametric EQ (Custom)" ID="{A724AB32-8347-4D0B-9234-AE74F0DA31AF}" ShortID="891571091" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																<PropertyList>
+																	<Property Name="FilterTypeBand1" Type="int32" Value="6"/>
+																	<Property Name="FilterTypeBand2" Type="int32" Value="4"/>
+																	<Property Name="FrequencyBand1" Type="Real32" Value="3000"/>
+																	<Property Name="FrequencyBand2" Type="Real32" Value="180"/>
+																	<Property Name="GainBand1" Type="Real32" Value="3"/>
+																	<Property Name="GainBand2" Type="Real32" Value="-6"/>
+																	<Property Name="OnOffBand3" Type="bool" Value="False"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</ObjectList>
+									</ObjectLists>
+									<ActiveSourceList>
+										<ActiveSource Name="Discussion" ID="{B81F41F1-0C94-494E-B915-EFF645390D47}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<BlendContainer Name="Campfire" ID="{B362CE2A-0CFC-4B8E-BE84-83B1F470F50F}" ShortID="534865498">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="CenterPercentage" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Color" Type="int16" Value="22"/>
+										<Property Name="GameAuxSendVolume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+										<Property Name="OverrideConversion" Type="bool" Value="True"/>
+										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="OverrideMetadata" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="ATT_Radio Moving_Campfire" ID="{82782FAC-6D03-4234-8CC9-4082A82D177B}" WorkUnitID="{44D59D0E-B34E-47D8-BCAD-9D79E4A94D67}"/>
+										</Reference>
+										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+										</Reference>
+										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Ambience" ID="{EAA8C518-F12C-48C5-BF6F-49FC9433F713}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Campfire Crackling" ID="{757D79B5-87DF-4ECB-B8A9-DE89C8CB7ACC}" ShortID="490378999">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="False"/>
+												<Property Name="GameAuxSendVolume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideMetadata" Type="bool" Value="True"/>
+												<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Radio" ID="{5039A60D-9ED9-43E1-8C22-C147CB8574E5}" WorkUnitID="{FB674831-9DB3-43DB-88C8-0EE9E9BF65A4}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Objects" ID="{6B1D71F8-9179-4F95-96F4-06E5676EA964}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="ThirdPerson" ID="{6758FB9E-76D6-42DE-A2B0-EE031329989B}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Campfire_Crackling" ID="{4C40BE05-C32E-4E46-A04E-4A676264C1D5}">
+													<Language>SFX</Language>
+													<AudioFile>Ambiances\Fire\Campfire_Crackling.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="222941921"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Campfire_Crackling" ID="{4C40BE05-C32E-4E46-A04E-4A676264C1D5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Campfire Rumble" ID="{E2BD3CF7-AA09-4FAF-A550-13B9CC0028DB}" ShortID="811546169">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="False"/>
+												<Property Name="GameAuxSendVolume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Radio" ID="{5039A60D-9ED9-43E1-8C22-C147CB8574E5}" WorkUnitID="{FB674831-9DB3-43DB-88C8-0EE9E9BF65A4}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Objects" ID="{6B1D71F8-9179-4F95-96F4-06E5676EA964}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="ThirdPerson" ID="{6758FB9E-76D6-42DE-A2B0-EE031329989B}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Campfire_Rumble" ID="{BA6B5BA4-D951-4854-9705-CAAA4B4DA36F}">
+													<Language>SFX</Language>
+													<AudioFile>Ambiances\Fire\Campfire_Rumble.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="391082413"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Campfire_Rumble" ID="{BA6B5BA4-D951-4854-9705-CAAA4B4DA36F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Campfire Combustion" ID="{87FBC26D-9848-4BC1-96AE-4CF19A022DB0}" ShortID="1034253665">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="False"/>
+												<Property Name="GameAuxSendVolume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Radio" ID="{5039A60D-9ED9-43E1-8C22-C147CB8574E5}" WorkUnitID="{FB674831-9DB3-43DB-88C8-0EE9E9BF65A4}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Objects" ID="{6B1D71F8-9179-4F95-96F4-06E5676EA964}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="ThirdPerson" ID="{6758FB9E-76D6-42DE-A2B0-EE031329989B}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Campfire_Burning" ID="{31E70961-F9AF-49C3-AC76-7BA6D5079902}">
+													<Language>SFX</Language>
+													<AudioFile>Ambiances\Fire\Campfire_Burning.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1043439056"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<EffectSlot Name="" ID="{A3B2ADB1-C8FF-4876-99A1-CABD06E6F93C}" ShortID="454533088">
+														<PropertyList>
+															<Property Name="Render" Type="bool" Value="True"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="Effect">
+																<Custom>
+																	<Effect Name="Wwise Parametric EQ (Custom)" ID="{847D9CE1-F432-4260-9BAE-EDFE54E4B3FC}" ShortID="864563493" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																		<PropertyList>
+																			<Property Name="FilterTypeBand1" Type="int32" Value="0"/>
+																			<Property Name="FrequencyBand2" Type="Real32" Value="835"/>
+																			<Property Name="GainBand2" Type="Real32" Value="8.5"/>
+																			<Property Name="OnOffBand1" Type="bool" Value="False"/>
+																			<Property Name="OnOffBand3" Type="bool" Value="False"/>
+																		</PropertyList>
+																	</Effect>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</ObjectList>
+											</ObjectLists>
+											<ActiveSourceList>
+												<ActiveSource Name="Campfire_Burning" ID="{31E70961-F9AF-49C3-AC76-7BA6D5079902}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Metadata">
+											<PluginInnerObject Name="" ID="{80100B72-CA06-4F9A-B12B-D0B0CDE1D627}" PluginName="MetadataSlot" CompanyID="0" PluginID="85">
+												<ReferenceList>
+													<Reference Name="Metadata" PluginName="Wwise System Output Settings" CompanyID="0" PluginID="900" PluginType="9">
+														<ObjectRef Name="MixBehavior_PassthroughMix" ID="{5B5BBF59-372A-42EE-BCAB-6D328DDEE302}" WorkUnitID="{21831E51-EF46-46C4-9AB1-160E6F547246}"/>
+													</Reference>
+												</ReferenceList>
+											</PluginInnerObject>
+										</ObjectList>
+									</ObjectLists>
+								</BlendContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Campfire" ID="{B362CE2A-0CFC-4B8E-BE84-83B1F470F50F}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="White Noise" ID="{CDE97B2D-5A01-4445-A787-015801489E9C}"/>
+										<PropertyList>
+											<Property Name="FadeOutTime" Type="Real64">
+												<ValueList>
+													<Value>0.2</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Music" ID="{FA24F032-FAE3-4F51-A3A1-FD22E0935D96}"/>
+										<PropertyList>
+											<Property Name="FadeOutTime" Type="Real64">
+												<ValueList>
+													<Value>0.2</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Talk" ID="{EA5D70D2-A9C4-43E3-B7DD-5F444FEF846D}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Music" ID="{98DB0725-CE64-4228-8365-353F37199D73}"/>
+										<ItemList>
+											<ItemRef Name="Music" ID="{FA24F032-FAE3-4F51-A3A1-FD22E0935D96}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Campfire" ID="{372AE7B1-C1BB-47D6-B176-1801955FC7CA}"/>
+										<ItemList>
+											<ItemRef Name="Campfire" ID="{B362CE2A-0CFC-4B8E-BE84-83B1F470F50F}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Talk" ID="{DCBB10D8-EA4F-45F4-9701-459A45C079A6}"/>
+										<ItemList>
+											<ItemRef Name="Talk" ID="{EA5D70D2-A9C4-43E3-B7DD-5F444FEF846D}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="White_Noise" ID="{26F950E3-F69B-4E46-8199-5B4964B4B899}"/>
+										<ItemList>
+											<ItemRef Name="White Noise" ID="{CDE97B2D-5A01-4445-A787-015801489E9C}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<Sound Name="Tick" ID="{99851430-2ED0-4A1D-AF1C-F3AD688E7B01}" ShortID="363587968">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="ATT_Radio Moving" ID="{F1E963D9-EF63-4270-B7D8-AC8F7ABE9881}" WorkUnitID="{44D59D0E-B34E-47D8-BCAD-9D79E4A94D67}"/>
+								</Reference>
+								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+								</Reference>
+								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="front" ID="{5BD377D9-9379-409B-8E3C-02E10E009E39}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.00371655104063429"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.114469772051536"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.159316154608523"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>front.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="200144771"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="front" ID="{5BD377D9-9379-409B-8E3C-02E10E009E39}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Tick Accent" ID="{D0B51D02-1010-4A6D-AE43-B68DE46F6836}" ShortID="884950493">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>200</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="ATT_Radio Moving" ID="{F1E963D9-EF63-4270-B7D8-AC8F7ABE9881}" WorkUnitID="{44D59D0E-B34E-47D8-BCAD-9D79E4A94D67}"/>
+								</Reference>
+								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+								</Reference>
+								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="front" ID="{6540E0AB-A078-4A8D-BF81-F4A4EC082CCD}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.00371655104063429"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.114469772051536"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.159316154608523"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>front.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="200144771"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="front" ID="{6540E0AB-A078-4A8D-BF81-F4A4EC082CCD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</PropertyContainer>
+				<PropertyContainer Name="Doors" ID="{7AE75030-C2A5-4433-9A10-8CEB55DF71A4}" ShortID="401611559">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="CenterPercentage" Type="int32">
+							<ValueList>
+								<Value>100</Value>
+							</ValueList>
+						</Property>
+						<Property Name="EnableDiffraction" Type="bool" Value="False"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{6A85E0D5-993A-4544-833E-4967ED85EB15}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-11</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation" CompanyID="4095" PluginID="65535" PluginType="15">
+							<ObjectRef Name="ATT_Doors" ID="{7BFCC871-E3C8-4F61-9B67-6993403FA88A}" WorkUnitID="{44D59D0E-B34E-47D8-BCAD-9D79E4A94D67}"/>
+						</Reference>
+						<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+						</Reference>
+						<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+							<ObjectRef Name="Objects" ID="{6B1D71F8-9179-4F95-96F4-06E5676EA964}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SwitchContainer Name="Door Material" ID="{E5E0A674-B37C-4EEA-BAA1-9082F658F047}" ShortID="460565860">
+							<ReferenceList>
+								<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Glass" ID="{1CFFA170-C6EC-4E65-82DD-C3502FC500A3}" WorkUnitID="{8BA09415-25F1-484E-AA25-58E4CD40B38A}"/>
+								</Reference>
+								<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Door_Material" ID="{B358144A-7456-46FB-B549-FDDECE42EBF3}" WorkUnitID="{8BA09415-25F1-484E-AA25-58E4CD40B38A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SwitchContainer Name="Door Movement Wood" ID="{52631C7D-A3EE-4F78-9339-163A35AA9727}" ShortID="51534964">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6.4705632537697</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Opening" ID="{4F7FC09C-1B62-4500-B978-9AD5EA35069B}" WorkUnitID="{8BA09415-25F1-484E-AA25-58E4CD40B38A}"/>
+										</Reference>
+										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Door_Movement" ID="{E61F903B-DB68-4AAD-AA30-DEE68771CD8C}" WorkUnitID="{8BA09415-25F1-484E-AA25-58E4CD40B38A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Door Wood Open" ID="{44A51C8A-D472-44EB-91E8-9808C30AF085}" ShortID="770944734">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Wooden_Door_Open" ID="{566CDEEC-2043-43DE-8A57-66E016D520AD}">
+													<Language>SFX</Language>
+													<AudioFile>Objects\Wooden_Door_Open.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="850414899"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Wooden_Door_Open" ID="{566CDEEC-2043-43DE-8A57-66E016D520AD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Door Wood Close" ID="{480A1CF6-73D9-4761-B8DE-56BE74A9823A}" ShortID="581176070">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Wooden_Door_Close" ID="{36521283-9F0E-449B-828A-5CC593961ED3}">
+													<Language>SFX</Language>
+													<AudioFile>Objects\Wooden_Door_Close.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="932244550"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Wooden_Door_Close" ID="{36521283-9F0E-449B-828A-5CC593961ED3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Door Wood Open" ID="{44A51C8A-D472-44EB-91E8-9808C30AF085}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Door Wood Close" ID="{480A1CF6-73D9-4761-B8DE-56BE74A9823A}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Closing" ID="{01389A70-D1E8-4E6F-9CEA-D605DDB9CD33}"/>
+												<ItemList>
+													<ItemRef Name="Door Wood Close" ID="{480A1CF6-73D9-4761-B8DE-56BE74A9823A}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Opening" ID="{4F7FC09C-1B62-4500-B978-9AD5EA35069B}"/>
+												<ItemList>
+													<ItemRef Name="Door Wood Open" ID="{44A51C8A-D472-44EB-91E8-9808C30AF085}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+								<SwitchContainer Name="Door Movement Glass" ID="{C2A4BB71-9A5B-4803-B81A-C13526CDAA6C}" ShortID="68723013">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>5.08840808679927</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Opening" ID="{4F7FC09C-1B62-4500-B978-9AD5EA35069B}" WorkUnitID="{8BA09415-25F1-484E-AA25-58E4CD40B38A}"/>
+										</Reference>
+										<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Door_Movement" ID="{E61F903B-DB68-4AAD-AA30-DEE68771CD8C}" WorkUnitID="{8BA09415-25F1-484E-AA25-58E4CD40B38A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Door_Glass_Close" ID="{AF240ED2-A452-4ED7-9A42-96532FDDAC4A}" ShortID="202385263">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Door_Glass_Close" ID="{8095C6BC-84F8-4B53-9401-69C3F3293709}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0789583333333333"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.162428571428572"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Objects\Door_Glass_Close.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="587223439"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Door_Glass_Close" ID="{8095C6BC-84F8-4B53-9401-69C3F3293709}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Door_Glass_Open" ID="{E6FDB4D3-278D-47CD-BBF7-A767BBD57F0E}" ShortID="509728308">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4DB219D0-A18F-4B77-A17F-5A7FBC9258E3}"/>
+												</Reference>
+												<Reference Name="OutputBus" CompanyID="4095" PluginID="65535" PluginType="15">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Door_Glass_Open" ID="{A9CB3894-FEBC-435D-A681-9DF708E0DCFB}">
+													<Language>SFX</Language>
+													<AudioFile>Objects\Door_Glass_Open.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="357491117"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Door_Glass_Open" ID="{A9CB3894-FEBC-435D-A681-9DF708E0DCFB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Door_Glass_Close" ID="{AF240ED2-A452-4ED7-9A42-96532FDDAC4A}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Door_Glass_Open" ID="{E6FDB4D3-278D-47CD-BBF7-A767BBD57F0E}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Closing" ID="{01389A70-D1E8-4E6F-9CEA-D605DDB9CD33}"/>
+												<ItemList>
+													<ItemRef Name="Door_Glass_Close" ID="{AF240ED2-A452-4ED7-9A42-96532FDDAC4A}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Opening" ID="{4F7FC09C-1B62-4500-B978-9AD5EA35069B}"/>
+												<ItemList>
+													<ItemRef Name="Door_Glass_Open" ID="{E6FDB4D3-278D-47CD-BBF7-A767BBD57F0E}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Door Movement Glass" ID="{C2A4BB71-9A5B-4803-B81A-C13526CDAA6C}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Door Movement Wood" ID="{52631C7D-A3EE-4F78-9339-163A35AA9727}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Glass" ID="{1CFFA170-C6EC-4E65-82DD-C3502FC500A3}"/>
+										<ItemList>
+											<ItemRef Name="Door Movement Glass" ID="{C2A4BB71-9A5B-4803-B81A-C13526CDAA6C}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Wood" ID="{D8840A7D-1C68-4DB9-A0DB-1FA1691F6DE0}"/>
+										<ItemList>
+											<ItemRef Name="Door Movement Wood" ID="{52631C7D-A3EE-4F78-9339-163A35AA9727}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+				</PropertyContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</Containers>
+</WwiseDocument>

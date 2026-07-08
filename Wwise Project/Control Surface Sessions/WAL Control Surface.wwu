@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A2EDBF5B-55B4-41DB-B87C-0847A94AB7BB}" SchemaVersion="133">
+	<ControlSurfaceSessions>
+		<WorkUnit Name="WAL Control Surface" ID="{A2EDBF5B-55B4-41DB-B87C-0847A94AB7BB}" PersistMode="Standalone">
+			<ChildrenList>
+				<ControlSurfaceSession Name="Mackie" ID="{B61CA01A-5A47-420B-9907-FC90255EBA3E}">
+					<ChildrenList>
+						<ControlSurfaceBindingGroup Name="Global" ID="{3921B1DE-39C6-4618-9E77-826D84FC0050}">
+							<PropertyList>
+								<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.1~Note-On~84"/>
+							</PropertyList>
+							<ChildrenList>
+								<ControlSurfaceBinding Name="Binding" ID="{BCD3E6E8-C4B7-4E7B-A83F-E8F6DA2AB67B}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.1~Note-On~95"/>
+										<Property Name="TargetName" Type="string" Value="StartStopCapture"/>
+										<Property Name="TargetType" Type="int16" Value="2"/>
+									</PropertyList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{2697E2B4-F6A1-4C96-8987-8E60B28FD7EB}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.1~Note-On~94"/>
+										<Property Name="TargetName" Type="string" Value="ToggleFollowCapture"/>
+										<Property Name="TargetType" Type="int16" Value="2"/>
+									</PropertyList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{DF8BB9AA-0437-44CB-848B-C661A9DF8B53}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.1~Note-On~93"/>
+										<Property Name="TargetName" Type="string" Value="ShowRemoteConnections"/>
+										<Property Name="TargetType" Type="int16" Value="2"/>
+									</PropertyList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{D737B97E-049B-43F7-B3BB-85DC5037742C}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.1~Note-On~54"/>
+										<Property Name="TargetName" Type="string" Value="SwitchToLayoutDesigner"/>
+										<Property Name="TargetType" Type="int16" Value="2"/>
+									</PropertyList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{45673DB4-96E9-41D1-AF9D-AEA0F9693AF6}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.1~Note-On~55"/>
+										<Property Name="TargetName" Type="string" Value="SwitchToLayoutProfiler"/>
+										<Property Name="TargetType" Type="int16" Value="2"/>
+									</PropertyList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{522DE592-A51B-4DCF-82CA-6006EEF583AA}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.1~Note-On~56"/>
+										<Property Name="TargetName" Type="string" Value="SwitchToLayoutSoundBank"/>
+										<Property Name="TargetType" Type="int16" Value="2"/>
+									</PropertyList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{CE86A58F-22AA-4D7C-9EF3-D23C3A4FEB69}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.1~Note-On~57"/>
+										<Property Name="TargetName" Type="string" Value="SwitchToLayoutMixer"/>
+										<Property Name="TargetType" Type="int16" Value="2"/>
+									</PropertyList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{BD28FB63-C5D2-431C-A8A9-9C51FABBD7BD}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.1~Note-On~58"/>
+										<Property Name="TargetName" Type="string" Value="SwitchToLayoutSchematic"/>
+										<Property Name="TargetType" Type="int16" Value="2"/>
+									</PropertyList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{044E1123-BA82-462B-81F2-19C07BA6E524}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.1~Note-On~59"/>
+										<Property Name="TargetName" Type="string" Value="SwitchToLayoutInteractiveMusic"/>
+										<Property Name="TargetType" Type="int16" Value="2"/>
+									</PropertyList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{F2581871-6220-4810-9608-D438D57570D2}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.1~Note-On~60"/>
+										<Property Name="TargetName" Type="string" Value="SwitchToLayoutDynamicDialogue"/>
+										<Property Name="TargetType" Type="int16" Value="2"/>
+									</PropertyList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{E9026500-D42F-4543-A552-0259627BE870}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.1~Note-On~61"/>
+										<Property Name="TargetName" Type="string" Value="SwitchToLayoutGameObjectProfiler"/>
+										<Property Name="TargetType" Type="int16" Value="2"/>
+									</PropertyList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{4144F656-7E24-45AC-B45B-21FFC8689A47}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.1~Note-On~62"/>
+										<Property Name="TargetName" Type="string" Value="ShowEffectEditor"/>
+										<Property Name="TargetType" Type="int16" Value="2"/>
+									</PropertyList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{118574DA-2C53-4931-A265-7BD802DFA51E}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.1~Note-On~52"/>
+										<Property Name="TargetName" Type="string" Value="ShowControlSurfaceBindings"/>
+										<Property Name="TargetType" Type="int16" Value="2"/>
+									</PropertyList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{2351F421-BB09-4B33-9697-CB75654D5059}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.1~Note-On~63"/>
+										<Property Name="TargetName" Type="string" Value="ShowMixingDesk"/>
+										<Property Name="TargetType" Type="int16" Value="2"/>
+									</PropertyList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{83DD5751-25FA-47DD-AEFE-5037AAD73256}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.1~Note-On~64"/>
+										<Property Name="TargetName" Type="string" Value="ShowAttenuationEditor"/>
+										<Property Name="TargetType" Type="int16" Value="2"/>
+									</PropertyList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{4F630C9E-AE0C-4F71-9C4D-2417C25A5411}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.1~Note-On~8"/>
+										<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+										<Property Name="TargetType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="TargetObject" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+										</Reference>
+									</ReferenceList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{0B1D9B54-E414-4935-9CCF-710181B2740B}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.1~Note-On~16"/>
+										<Property Name="TargetName" Type="string" Value="ToggleMute"/>
+										<Property Name="TargetType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="TargetObject" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+										</Reference>
+									</ReferenceList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{B0415AC8-C4C2-4218-98DD-1EEF6D6F62B2}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.1~Note-On~9"/>
+										<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+										<Property Name="TargetType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="TargetObject" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="UI_PassthroughMix" ID="{09460882-043D-49A9-B8FC-E267A66B128E}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+										</Reference>
+									</ReferenceList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{59D8A0BF-4F5F-4429-8CB4-5C81AFE49F68}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.1~Note-On~17"/>
+										<Property Name="TargetName" Type="string" Value="ToggleMute"/>
+										<Property Name="TargetType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="TargetObject" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="UI_PassthroughMix" ID="{09460882-043D-49A9-B8FC-E267A66B128E}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+										</Reference>
+									</ReferenceList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{79262947-D335-48A2-92CE-E1D3E32C09B9}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.1~Note-On~10"/>
+										<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+										<Property Name="TargetType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="TargetObject" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Backgrounds_MainMix" ID="{ECFB6D01-E6C8-4775-8F5E-0605C23A1245}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+										</Reference>
+									</ReferenceList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{6D58BBC7-F6CB-4C53-89F2-2F920B654652}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.1~Note-On~18"/>
+										<Property Name="TargetName" Type="string" Value="ToggleMute"/>
+										<Property Name="TargetType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="TargetObject" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Backgrounds_MainMix" ID="{ECFB6D01-E6C8-4775-8F5E-0605C23A1245}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+										</Reference>
+									</ReferenceList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{DD9A1662-0621-4F29-982E-CEFCC2497D6A}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.1~Note-On~11"/>
+										<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+										<Property Name="TargetType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="TargetObject" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="MainCharacter" ID="{81222C71-E408-48AD-8C1B-D92CB1D51523}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+										</Reference>
+									</ReferenceList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{BB7BCCBD-40EC-4796-A500-16282DF52884}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.1~Note-On~19"/>
+										<Property Name="TargetName" Type="string" Value="ToggleMute"/>
+										<Property Name="TargetType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="TargetObject" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="MainCharacter" ID="{81222C71-E408-48AD-8C1B-D92CB1D51523}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+										</Reference>
+									</ReferenceList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{3E63BD50-161C-4143-96B9-38B37ADDCA38}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.1~Note-On~12"/>
+										<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+										<Property Name="TargetType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="TargetObject" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Objects" ID="{6B1D71F8-9179-4F95-96F4-06E5676EA964}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+										</Reference>
+									</ReferenceList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{311DDA96-CE45-4711-8F10-D3A954D34C29}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.1~Note-On~20"/>
+										<Property Name="TargetName" Type="string" Value="ToggleMute"/>
+										<Property Name="TargetType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="TargetObject" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Objects" ID="{6B1D71F8-9179-4F95-96F4-06E5676EA964}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+										</Reference>
+									</ReferenceList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{73897C91-A8B4-478B-8492-90BECD745858}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.1~Note-On~13"/>
+										<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+										<Property Name="TargetType" Type="int16" Value="1"/>
+									</PropertyList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{0089E92F-2FA0-470B-A220-26C03334794D}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.1~Note-On~21"/>
+										<Property Name="TargetName" Type="string" Value="ToggleMute"/>
+										<Property Name="TargetType" Type="int16" Value="1"/>
+									</PropertyList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{FDCB8CE2-4486-4EA8-8F40-3DCC6EA30BEB}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.1~Note-On~14"/>
+										<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+										<Property Name="TargetType" Type="int16" Value="1"/>
+									</PropertyList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{22030CF9-7A3E-4C6A-8540-4AA28C5249CF}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.1~Note-On~22"/>
+										<Property Name="TargetName" Type="string" Value="ToggleMute"/>
+										<Property Name="TargetType" Type="int16" Value="1"/>
+									</PropertyList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{D6EB0FD1-D740-46E0-B10C-4AC9A94A3F81}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.9~Pitch-Bend"/>
+										<Property Name="TargetClassID" Type="int32" Value="7733251"/>
+										<Property Name="TargetName" Type="string" Value="ERLevel"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="TargetObject" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Mezzanine" ID="{B8E8B388-D45F-4548-B0E2-59F6E1CC1DAF}" WorkUnitID="{7574C1D1-6DBC-46E2-8C5B-FA1273788142}"/>
+										</Reference>
+									</ReferenceList>
+								</ControlSurfaceBinding>
+							</ChildrenList>
+						</ControlSurfaceBindingGroup>
+						<ControlSurfaceBindingGroup Name="Current Selection" ID="{3646284C-5B58-43AF-A9A8-88DC50AA374C}">
+							<PropertyList>
+								<Property Name="GroupType" Type="int16" Value="4"/>
+								<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.1~Note-On~85"/>
+							</PropertyList>
+							<ChildrenList>
+								<ControlSurfaceBinding Name="Binding" ID="{A6ACE230-F219-45A2-B48F-23DB62C2EE9D}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.1~Pitch-Bend"/>
+										<Property Name="TargetClassID" Type="int32" Value="1376272"/>
+										<Property Name="TargetName" Type="string" Value="Volume"/>
+									</PropertyList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{058D49B1-F263-4623-A142-5D0602D2009C}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.2~Pitch-Bend"/>
+										<Property Name="TargetClassID" Type="int32" Value="2228240"/>
+										<Property Name="TargetName" Type="string" Value="MakeUpGain"/>
+									</PropertyList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{0158B726-2D90-4316-8DDB-10D4C7AF0DF5}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.3~Pitch-Bend"/>
+										<Property Name="TargetClassID" Type="int32" Value="65552"/>
+										<Property Name="TargetName" Type="string" Value="Lowpass"/>
+									</PropertyList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{0E3D0A16-44BE-48F6-BE6D-EC5338427692}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.4~Pitch-Bend"/>
+										<Property Name="TargetClassID" Type="int32" Value="524304"/>
+										<Property Name="TargetName" Type="string" Value="Highpass"/>
+									</PropertyList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{D54F76D9-F949-4D30-B840-A1C4656C1917}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.5~Pitch-Bend"/>
+										<Property Name="TargetClassID" Type="int32" Value="1376272"/>
+										<Property Name="TargetName" Type="string" Value="Pitch"/>
+									</PropertyList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{BE762E44-1727-4B4B-A923-8D5488F7D327}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.6~Pitch-Bend"/>
+										<Property Name="TargetClassID" Type="int32" Value="524304"/>
+										<Property Name="TargetName" Type="string" Value="OutputBusVolume"/>
+									</PropertyList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{EE048DF0-7172-4073-B878-288470C401A8}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.7~Pitch-Bend"/>
+										<Property Name="TargetClassID" Type="int32" Value="1769488"/>
+										<Property Name="TargetName" Type="string" Value="OutputBusLowpass"/>
+									</PropertyList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{B81635A3-8BD2-4A36-A50A-14BE942BD7D7}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.8~Pitch-Bend"/>
+										<Property Name="TargetClassID" Type="int32" Value="655376"/>
+										<Property Name="TargetName" Type="string" Value="OutputBusHighpass"/>
+									</PropertyList>
+								</ControlSurfaceBinding>
+							</ChildrenList>
+						</ControlSurfaceBindingGroup>
+						<ControlSurfaceBindingGroup Name="View Groups" ID="{18EE0A96-6981-41D2-912D-1ADB17B097CC}">
+							<PropertyList>
+								<Property Name="GroupType" Type="int16" Value="3"/>
+							</PropertyList>
+							<ChildrenList>
+								<ControlSurfaceBindingGroup Name="RoomVerb" ID="{DE4C4F3F-371A-41B7-A7C1-452E216D0DB1}">
+									<PropertyList>
+										<Property Name="GroupType" Type="int16" Value="2"/>
+										<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.1~Note-On~86"/>
+									</PropertyList>
+									<ChildrenList>
+										<ControlSurfaceBinding Name="Binding" ID="{ADF982A0-00CA-46D8-BD5D-91638EE1E9D7}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.1~Pitch-Bend"/>
+												<Property Name="TargetClassID" Type="int32" Value="7733251"/>
+												<Property Name="TargetName" Type="string" Value="PreDelay"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Binding" ID="{33E18557-3C4A-4A21-A046-7F4DAC73D960}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.2~Pitch-Bend"/>
+												<Property Name="TargetClassID" Type="int32" Value="7733251"/>
+												<Property Name="TargetName" Type="string" Value="DecayTime"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Binding" ID="{2E78BFC3-7423-41B0-99F4-A9C9BD511725}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.3~Pitch-Bend"/>
+												<Property Name="TargetClassID" Type="int32" Value="7733251"/>
+												<Property Name="TargetName" Type="string" Value="HFDamping"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Binding" ID="{F5697044-39EE-4809-951B-6D81BE699835}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.4~Pitch-Bend"/>
+												<Property Name="TargetClassID" Type="int32" Value="7733251"/>
+												<Property Name="TargetName" Type="string" Value="Density"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Binding" ID="{74664F0F-D1F5-47AC-AF03-95ABA1F14B40}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.5~Pitch-Bend"/>
+												<Property Name="TargetClassID" Type="int32" Value="7733251"/>
+												<Property Name="TargetName" Type="string" Value="RoomShape"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Binding" ID="{8FFDB511-799B-4CD4-BAD9-4E199523214E}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.6~Pitch-Bend"/>
+												<Property Name="TargetClassID" Type="int32" Value="7733251"/>
+												<Property Name="TargetName" Type="string" Value="Quality"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Binding" ID="{E994104A-343E-4B3C-B908-D0DE0E342066}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.7~Pitch-Bend"/>
+												<Property Name="TargetClassID" Type="int32" Value="7733251"/>
+												<Property Name="TargetName" Type="string" Value="Diffusion"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Binding" ID="{32E9EAEC-D7EF-4A1C-BE4A-273B6008FAB4}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.8~Pitch-Bend"/>
+												<Property Name="TargetClassID" Type="int32" Value="7733251"/>
+												<Property Name="TargetName" Type="string" Value="StereoWidth"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Binding" ID="{13F0C2DB-3A3E-4438-AE34-5849421847E2}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.1~CC~22"/>
+												<Property Name="TargetClassID" Type="int32" Value="7733251"/>
+												<Property Name="TargetName" Type="string" Value="ERLevel"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Binding" ID="{BECC2330-A49E-4B66-8A63-B1785B70698D}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="Mackie~Ch.1~CC~23"/>
+												<Property Name="TargetClassID" Type="int32" Value="7733251"/>
+												<Property Name="TargetName" Type="string" Value="ReverbLevel"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+									</ChildrenList>
+								</ControlSurfaceBindingGroup>
+							</ChildrenList>
+						</ControlSurfaceBindingGroup>
+					</ChildrenList>
+				</ControlSurfaceSession>
+			</ChildrenList>
+		</WorkUnit>
+	</ControlSurfaceSessions>
+</WwiseDocument>

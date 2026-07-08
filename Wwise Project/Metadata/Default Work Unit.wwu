@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{21831E51-EF46-46C4-9AB1-160E6F547246}" SchemaVersion="133">
+	<Metadatas>
+		<WorkUnit Name="Default Work Unit" ID="{21831E51-EF46-46C4-9AB1-160E6F547246}" PersistMode="Standalone">
+			<ChildrenList>
+				<Metadata Name="MixBehavior_PassthroughMix" ID="{5B5BBF59-372A-42EE-BCAB-6D328DDEE302}" PluginName="Wwise System Output Settings" CompanyID="0" PluginID="900" PluginType="9">
+					<PropertyList>
+						<Property Name="Mix" Type="int32" Value="2"/>
+					</PropertyList>
+				</Metadata>
+				<Metadata Name="MixBehavior_MainMix" ID="{E501FAC8-1D1F-476E-ABD3-6C8236D7D93F}" PluginName="Wwise System Output Settings" CompanyID="0" PluginID="900" PluginType="9">
+					<PropertyList>
+						<Property Name="Mix" Type="int32" Value="1"/>
+					</PropertyList>
+				</Metadata>
+			</ChildrenList>
+		</WorkUnit>
+	</Metadatas>
+</WwiseDocument>

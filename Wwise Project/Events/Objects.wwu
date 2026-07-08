@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7EE28F51-00A2-4484-B34C-6F3902A4EAB0}" SchemaVersion="133">
+	<Events>
+		<WorkUnit Name="Objects" ID="{7EE28F51-00A2-4484-B34C-6F3902A4EAB0}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Radio_On" ID="{9B82CBF2-D337-4D7E-B230-F212B11552C9}">
+					<ChildrenList>
+						<Action Name="" ID="{1044F11D-B2E2-45D4-BCD9-9BDF381CA07C}" ShortID="607993949">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Radio Program SW" ID="{55D31D0B-A233-4E75-AA1A-A1BD0E983C16}" WorkUnitID="{5D930F2C-27AA-4E44-983C-77E0029717BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{7DBB3003-C0AD-4DD3-88D5-E904F8DD4E56}" ShortID="225379058">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Radio Program SW" ID="{55D31D0B-A233-4E75-AA1A-A1BD0E983C16}" WorkUnitID="{5D930F2C-27AA-4E44-983C-77E0029717BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{B1340192-D13A-46AC-870F-C4ED05F0B107}" ShortID="660195606">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="36"/>
+								<Property Name="SeekPercent" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{1997DA70-4259-4EBA-97C3-E4EDF4227877}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="70"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Radio Program SW" ID="{55D31D0B-A233-4E75-AA1A-A1BD0E983C16}" WorkUnitID="{5D930F2C-27AA-4E44-983C-77E0029717BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Radio_Off" ID="{8BF3FECE-393D-4809-BBED-A6570BA0AEED}">
+					<ChildrenList>
+						<Action Name="" ID="{A51EBB67-6A16-4792-92B8-0649400A8515}" ShortID="200885480">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Radio Program SW" ID="{55D31D0B-A233-4E75-AA1A-A1BD0E983C16}" WorkUnitID="{5D930F2C-27AA-4E44-983C-77E0029717BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Radio_Tick" ID="{08ECFBE2-8701-44E6-A74A-DFC7DA4C337D}">
+					<ChildrenList>
+						<Action Name="" ID="{D036E0A9-4D32-4233-B7C5-5F78F7ED9446}" ShortID="601965027">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Tick" ID="{99851430-2ED0-4A1D-AF1C-F3AD688E7B01}" WorkUnitID="{5D930F2C-27AA-4E44-983C-77E0029717BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Radio_Tick_Accent" ID="{77D72270-C44B-4E02-AFD2-325E723F078B}">
+					<ChildrenList>
+						<Action Name="" ID="{FA4678DD-6DEB-4DD3-A6B0-BF0A1D987B1C}" ShortID="889078977">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Tick Accent" ID="{D0B51D02-1010-4A6D-AE43-B68DE46F6836}" WorkUnitID="{5D930F2C-27AA-4E44-983C-77E0029717BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="DoorInteraction" ID="{FFE4DF66-D683-4061-82A6-8A08E88F5A00}">
+					<ChildrenList>
+						<Action Name="" ID="{CD1326B9-D79F-45FA-80C7-23C568D09327}" ShortID="985634909">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Door Material" ID="{E5E0A674-B37C-4EEA-BAA1-9082F658F047}" WorkUnitID="{5D930F2C-27AA-4E44-983C-77E0029717BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Radio_Kitchen" ID="{287E0C58-F89B-430E-BA51-A379D46AB2E0}">
+					<ChildrenList>
+						<Action Name="" ID="{20C474C7-264B-441A-B92E-B55FA8ED4DCB}" ShortID="513868742">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Radio Kitchen Noise" ID="{6E0C20F2-4218-4310-990A-111D061A74B2}" WorkUnitID="{AD5DA779-EA55-43B1-B2A4-BED4A0F460DA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

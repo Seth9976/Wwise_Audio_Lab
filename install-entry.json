@@ -1,0 +1,53 @@
+{
+    "bundle": {
+        "id": "wal.2025.1.3.422",
+        "type": "wwise",
+        "name": "",
+        "tag": "",
+        "description": "",
+        "vendor": "",
+        "version": {
+            "year": 2025,
+            "major": 1,
+            "minor": "3",
+            "build": 422
+        },
+        "labels": [],
+        "links": [],
+        "productDependentData": {},
+        "documentation": [],
+        "image": "",
+        "redistributables": [],
+        "eulas": [],
+        "groups": [],
+        "files": []
+    },
+    "targetDir": "E:\\Wwise_Audio_Lab_2025.1.3.422",
+    "installType": "normal",
+    "installed": {
+        "groups": [
+            {
+                "id": "Packages",
+                "valueId": "WwiseProject"
+            },
+            {
+                "id": "Packages",
+                "valueId": "Binary"
+            },
+            {
+                "id": "OS",
+                "valueId": "Windows"
+            }
+        ],
+        "files": [
+            "WwiseAudioLab.Windows.tar.xz",
+            "WwiseAudioLab.WwiseProject.tar.xz",
+            "WwiseAudioLab.OfflineDocumentation.tar.xz"
+        ],
+        "date": 1783514044288
+    },
+    "children": [],
+    "unpackedFiles": [
+        "images\\wal.2025.1.3.422.png"
+    ]
+}

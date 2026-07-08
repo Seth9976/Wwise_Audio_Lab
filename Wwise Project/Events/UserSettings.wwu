@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6CBD9722-7BDE-44FC-9BE0-6ECCB3B7892B}" SchemaVersion="133">
+	<Events>
+		<WorkUnit Name="UserSettings" ID="{6CBD9722-7BDE-44FC-9BE0-6ECCB3B7892B}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="LateReverbOn" ID="{F7E109FC-3090-404B-A88D-D49400CA8260}">
+					<ChildrenList>
+						<Action Name="" ID="{FA3E379C-71B1-47F7-A0BB-1542BA1EB127}" ShortID="746224822">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="1"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="LateReverb" ID="{6B25E302-5ECF-445A-91A4-C9D80D0EA4FF}" WorkUnitID="{C9D11938-1035-430D-BD4F-C5B7B7C00CB2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="LateReverbOff" ID="{32D66191-DB3B-4311-8E6D-22A9BC4214EB}">
+					<ChildrenList>
+						<Action Name="" ID="{93278F3F-1E73-49C2-92BF-04E7E9CAFFA2}" ShortID="495786355">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="LateReverb" ID="{6B25E302-5ECF-445A-91A4-C9D80D0EA4FF}" WorkUnitID="{C9D11938-1035-430D-BD4F-C5B7B7C00CB2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="DynamicEROn" ID="{E97E6E25-B833-40DD-A043-18600EBE6FE6}">
+					<ChildrenList>
+						<Action Name="" ID="{6B487394-0C84-446D-A52C-31A287936299}" ShortID="952242813">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="1"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="DynamicER" ID="{7A4F77EC-E9B9-4BC4-A72F-2847A8208EB2}" WorkUnitID="{C9D11938-1035-430D-BD4F-C5B7B7C00CB2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="DynamicEROff" ID="{8EE8AF35-4642-4667-ABBB-09D1AA76B2EB}">
+					<ChildrenList>
+						<Action Name="" ID="{8E3893C7-09AA-4C9F-9C1C-A30F89966CB9}" ShortID="583295421">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="DynamicER" ID="{7A4F77EC-E9B9-4BC4-A72F-2847A8208EB2}" WorkUnitID="{C9D11938-1035-430D-BD4F-C5B7B7C00CB2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B2BEA2F5-4823-44B4-AB7F-26BDBB53B479}" SchemaVersion="133">
+	<Events>
+		<WorkUnit Name="Character" ID="{B2BEA2F5-4823-44B4-AB7F-26BDBB53B479}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Character_Footstep" ID="{E003EF51-6FD0-4329-8D2F-7BD72AB64973}">
+					<ChildrenList>
+						<Action Name="" ID="{CED50994-A444-4FD5-ADD8-21DD99962B7A}" ShortID="722061539">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Character Footsteps Speed SW" ID="{CE63F3FC-FC9B-4FF4-A010-58BAA44BE657}" WorkUnitID="{C9129B2C-D835-43A0-B7DD-B33A2FC91111}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

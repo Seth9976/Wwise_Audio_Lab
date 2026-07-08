@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4B5EFD08-7D03-4BA3-911C-2256A062C701}" SchemaVersion="133">
+	<Switches>
+		<WorkUnit Name="Character" ID="{4B5EFD08-7D03-4BA3-911C-2256A062C701}" PersistMode="Standalone">
+			<Comment>A</Comment>
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="3"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<SwitchGroup Name="Footsteps_Speed" ID="{CDAC6520-1AD8-437E-8126-ED9C733F2F9C}">
+					<ChildrenList>
+						<Switch Name="Walk" ID="{31595C9D-B3F6-4CFE-902B-CEB5483E8FAD}"/>
+						<Switch Name="Run" ID="{C2A1D91C-7A83-4A44-91E3-B505BAE4BA01}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="Footsteps_Speed" ID="{673850B9-4515-4154-AC3D-F0718EE38F22}"/>
+						<Curve Name="" ID="{2F6D1C1D-396F-40E8-9648-5AFCAD56D6AF}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>49.999</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>100</XPos>
+									<YPos>0</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E6AAD01D-9BCC-4A6D-97FC-C26FA61D7FAC}" SchemaVersion="133">
+	<GameParameters>
+		<WorkUnit Name="Weapon" ID="{E6AAD01D-9BCC-4A6D-97FC-C26FA61D7FAC}" PersistMode="Standalone">
+			<Comment>A</Comment>
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="4"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<GameParameter Name="Ball_Rebound_Velocity" ID="{3ABAF753-FE8B-4FBA-B231-1F6EA502DB15}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Ball_Rebound_Angle" ID="{DFE04A3E-F6A7-4B1E-82A6-A9F0CE43572D}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="180"/>
+						<Property Name="Min" Type="Real64" Value="-180"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Ball_Rebound_Elevation" ID="{1395B58F-9EB1-4836-A058-59A86C5F81F5}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="90"/>
+						<Property Name="Min" Type="Real64" Value="-90"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

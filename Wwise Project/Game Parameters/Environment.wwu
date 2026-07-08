@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6A3900CE-8D7F-48AF-B923-F1EACD4CAB52}" SchemaVersion="133">
+	<GameParameters>
+		<WorkUnit Name="Environment" ID="{6A3900CE-8D7F-48AF-B923-F1EACD4CAB52}" PersistMode="Standalone">
+			<Comment>A</Comment>
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="24"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<GameParameter Name="AmbisonicsQuad" ID="{C397C7B6-0F1F-4E1C-9AC7-AAB57FE699C2}">
+					<Comment>Used in Blend Containers for A-B Comparison between Ambisonics and Quad formats. </Comment>
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="1"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Fire_Distance" ID="{F1B9C19D-DF59-4742-A907-406D53E31C26}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+						<Property Name="FilterTimeDown" Type="Real64" Value="0.2"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="0.2"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="2000"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="AstrolabeSize" ID="{C0570A08-74D9-4389-8617-63A911EF0850}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="3000"/>
+						<Property Name="Max" Type="Real64" Value="5000"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Room_Decay" ID="{48C534F0-75A0-4C52-83FD-B2A8E1EC7EB8}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="10"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Room_Predelay" ID="{9DD33D43-CB83-415F-B659-09E737D36A04}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1000"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Room_HFDamping" ID="{9A5FDFAE-4E2F-49E3-A364-1B8E8442AA2D}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="Min" Type="Real64" Value="-1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

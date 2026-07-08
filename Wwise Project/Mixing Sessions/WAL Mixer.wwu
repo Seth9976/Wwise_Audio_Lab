@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{EFDE4B0A-F88D-4B45-8B8B-BE9E0449061B}" SchemaVersion="133">
+	<MixingSessions>
+		<WorkUnit Name="WAL Mixer" ID="{EFDE4B0A-F88D-4B45-8B8B-BE9E0449061B}" PersistMode="Standalone">
+			<ChildrenList>
+				<MixingSession Name="Main Busses" ID="{41B00335-1960-4854-9CF2-9CABC1BA729C}">
+					<ObjectList>
+						<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+						<ObjectRef Name="Positional_AudioObjects" ID="{2D865080-EAA7-4B18-B490-4E6A5A5A3875}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+						<ObjectRef Name="Backgrounds_MainMix" ID="{ECFB6D01-E6C8-4775-8F5E-0605C23A1245}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+						<ObjectRef Name="UI_PassthroughMix" ID="{09460882-043D-49A9-B8FC-E267A66B128E}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+						<ObjectRef Name="MainCharacter" ID="{81222C71-E408-48AD-8C1B-D92CB1D51523}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+						<ObjectRef Name="Objects" ID="{6B1D71F8-9179-4F95-96F4-06E5676EA964}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+						<ObjectRef Name="EarlyReflections" ID="{A9000892-022C-4DA4-9074-EB03B5C3982F}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+						<ObjectRef Name="LateReverb" ID="{F8C3A023-9B4E-4B11-B6F7-F5AC31C7A17B}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+						<ObjectRef Name="FirstPerson" ID="{3595F519-5F5B-4401-AD56-BEED0D5AC609}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+						<ObjectRef Name="ThirdPerson" ID="{6758FB9E-76D6-42DE-A2B0-EE031329989B}" WorkUnitID="{ADEE1C8D-95E8-4297-973A-6C1395A44B42}"/>
+					</ObjectList>
+				</MixingSession>
+			</ChildrenList>
+		</WorkUnit>
+	</MixingSessions>
+</WwiseDocument>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4C18C023-8280-472D-BB3A-B47F893428CF}" SchemaVersion="133">
+	<Events>
+		<WorkUnit Name="Weapon" ID="{4C18C023-8280-472D-BB3A-B47F893428CF}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Weapon_Fire" ID="{C47AD2DB-8A88-4326-A89F-748CDF9A17B0}">
+					<ChildrenList>
+						<Action Name="" ID="{863F5C78-B9FE-454D-BFE1-D8432FE240D6}" ShortID="982170829">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Weapon Fire SW" ID="{58E6852A-7680-4EA9-812A-C7A3CA2EFE7C}" WorkUnitID="{491F35F7-D8A2-4804-8237-56DBB97164F3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Weapon_Ball_Rebound" ID="{0B888B16-0C8C-437A-8C5D-633BF6A0B993}">
+					<ChildrenList>
+						<Action Name="" ID="{1A8B2552-D8BC-4772-B795-2D500E4957AF}" ShortID="503929548">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Weapon Ball Rebound Surface SW" ID="{6D7045C1-5AB1-4B72-8B54-FC37A8F46CB0}" WorkUnitID="{491F35F7-D8A2-4804-8237-56DBB97164F3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Weapon_Select" ID="{CA4AE2EA-EA76-4F5A-85F3-6EA0023A3565}">
+					<ChildrenList>
+						<Action Name="" ID="{5F528E94-AC60-4D90-88BB-C833008B750D}" ShortID="706472385">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Weapon Select SW" ID="{C15865B5-7947-46A9-A9BC-EF6207863EC2}" WorkUnitID="{491F35F7-D8A2-4804-8237-56DBB97164F3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
